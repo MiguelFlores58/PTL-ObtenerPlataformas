@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome LoginV5(1)(1)",
+  "Type": "Screen",
+  "Id": "8Zz1O_6ePk6K1Q4MC3nTfw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/8Zz1O_6ePk6K1Q4MC3nTfw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/JRTpLjYq2k2ZGmnaoFBQBg",
+  "Created": "2026-04-07T23:50:42.395611Z",
+  "Updated": "2026-04-07T23:50:42.395611Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

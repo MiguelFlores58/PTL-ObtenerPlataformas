@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Z2bImLD2tkGEc4AXFg8qPg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="8, 333, 250, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Consumos Por Estación' tag='A' /&gt;" Guid="8c26f296-4f57-4ac2-8ad5-d4ca85f35c22" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="83087372ea05e18544b348e25c1e10a6.jpg" xmlns="">0fgwT-GMQ0EWPPDklmxAelw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

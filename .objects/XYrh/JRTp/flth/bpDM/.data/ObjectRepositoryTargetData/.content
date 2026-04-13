@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b2jmmaA-EkGxKm9BslWADA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="globalgetnet.com/XUI" DesignTimeRectangle="1031, 619, 420, 49" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='floatingLabelInput24' tag='INPUT' type='text' class='form-control' placeholder='Correo electrónico o usuario' aaname=' Correo electrónico o usuario ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="70a3df9d-453a-461d-a922-6c08bb7d0e84" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LoginV5' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1031, 619, 380, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='pe-none' aaname=' Correo electrónico o usuario ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Correo electrónico o usuario' /&gt;" Guid="af615e32-6548-4dd8-8193-8db91b5484c2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="899c22ad71236cbd61a98784fa4a4b3f.jpg" xmlns="">0DdzoOyq3IUS5xL-3FsUThA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

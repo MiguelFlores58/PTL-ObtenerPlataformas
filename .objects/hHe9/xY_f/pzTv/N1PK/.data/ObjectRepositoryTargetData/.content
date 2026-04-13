@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AZtaTkm7WkORPK9Wxax1Qg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="inbursa.com/sites/gfi/home" DesignTimeRectangle="1415, 349, 240, 76" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;Vales de gasolina/despensa en línea ' tag='A' /&gt;" Guid="ef9d29f8-bb2a-4da0-a7f2-96137f814103" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=798a98f2c6a156d50069c19acc70bd91ceb96cb0d3562210b5cfe732fa0ba11057' title='Grupo Financiero Inbursa' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4c778df29a0d3f15dc82c49b19b7f269.jpg" xmlns="">02tksq4f0pUGFvHKBAI_beA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

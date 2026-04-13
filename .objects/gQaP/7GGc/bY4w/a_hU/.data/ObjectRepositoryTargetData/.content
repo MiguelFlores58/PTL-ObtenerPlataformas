@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uC6UMDhhY0OyHjyN_BjMGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="1701, 513, 65, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                      Excel                                 ' tag='A' /&gt;" Guid="8fd0e92a-aa5a-4d83-b3bd-8b64078a1197" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="26a0ca85517c7b7b0a9b15d46590679f.jpg" xmlns="">0z8OxKkhJGESrCGzfk4-oLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

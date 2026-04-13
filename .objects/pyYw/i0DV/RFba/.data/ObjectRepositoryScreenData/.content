@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="PzWP91wmCkun9jIBUyx6HQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALESURBVDhPdZJbSJNhGMdfgi4LJEuaZy1smZV+39Yytdl005yHTcMKEyGP9XmqFVYXWiJhJ+xIuW8e59ly+yxEMEEoRK2bLqqLoIs0ilIRlX1O/f7xbWVO6+L3PrwXz+99Ht4/AUB0DNekY7iJ34yv4s89JOz0COmrziMwexOepYjYJ+I4dGct0BX2QsdwSGUsSGaeI6LkNcJLhh014MzHZ9kGM0H9TrJcF/IPAWO9qWOcghSmF/FF/SjKe4KLOTUozXmIU5nNeFOTFoM2H9pmlMl5ltq8RsB5ic16xgp56SjO59wXEL9JwNEtWEjYjqXD7sAlP9i7FOCNFHiW+rxWINItvk6XjmEoPXEZmg2YTfTFXKIP5mK8MJMaCL6eBt9Ii4L5dQI9Yz0YWfIKWQXNsGk9BV7riemkwBUmlX6YrwwR7N1ycYpyF0FM/gBR5b0ku4rff+rLOAHEESwle2I5WbLCYrQHkOkNtAcDTVIPF8HJoi6SfK6XpBc81X5IoDCfIMFE0m58TZL+RSvFuCoIP6roWzMtEa6/MF0bTmYbaTL5QKFKibsNWtkIddwjxGpcOaK8h7SslmsZF3pcBWiQEjQEEVg83l0uuIKN9AD2a8zYq25xomlFcHQTQhM7oC4ctMfmD7i5CMRg2Fg6FO078OVuNPYozQKtakSEhl1BoXyM+MxOHDP0iXkxrBPwLGVeMoUBnf5CcWa5sFXGIVxtgiK2DvJoFhFxJugLOeiLHYH7uVawjWcp2Iw00O2L0etawV3GCf6HuhAU1YZAWSsOpHE4bngBHWMVBVMuAhtLVSywjoTBLk5Rvw9vqxMwVKnHcFUSxm5EoqLsTqo8d0SVVmhR6RhO4iKYN4qNToHNKMOiKRToCAQ6A5zV6tY/VRtFlLmDRFPQ7wje2hV6eJb6/h++2VlKhhYJYa+WEVn2MElZJfgFz5lfxqXYlq0AAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='XIGA' /&gt;" Url="https://monext.xiga.com.mx/" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="dd8fac2cc72f18dc99e3e75a562b391f.jpg" xmlns="">03wfND63Us0iWFjT05dO42g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

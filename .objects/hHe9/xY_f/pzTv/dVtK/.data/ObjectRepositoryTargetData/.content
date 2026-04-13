@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HmvFd3CPZUiE7QJGsmufpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="1040, 475, 69, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='tablaBorde1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" Guid="390cecd1-5b0f-4269-bf97-5b28df35acbd" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=2bdfc881ea1cc2b00069c19eaf33e3d4453546f84a373df4d3965731e57b986682' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f4c8378573d9ab8d753ba66efeb3e7a2.jpg" xmlns="">0SLJGYp3bFkOaQlQNBm2rjg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

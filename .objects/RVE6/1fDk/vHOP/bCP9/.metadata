@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Reporte de Consumos",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "bCP9ncwgg0a2XWQMvcaUZQ",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/bCP9ncwgg0a2XWQMvcaUZQ",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/vHOP9-wrAkuCupEtNT3Y8Q",
+  "Created": "2026-03-30T19:23:26.3276168Z",
+  "Updated": "2026-03-30T19:23:26.3276168Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

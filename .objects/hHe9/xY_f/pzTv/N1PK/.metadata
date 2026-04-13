@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Vales de gasolinadespe…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "N1PKzOV6MEaiCr-Nu5OyNQ",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/N1PKzOV6MEaiCr-Nu5OyNQ",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/pzTvTcCeGkWBV8kBRd8ykg",
+  "Created": "2026-03-23T20:12:35.6499558Z",
+  "Updated": "2026-03-23T20:12:35.6499558Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

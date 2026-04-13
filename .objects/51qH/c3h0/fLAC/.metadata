@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Vale Inbursa Web",
+  "Type": "Screen",
+  "Id": "fLACxgujBkG-3TgsX-f7Qg",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/fLACxgujBkG-3TgsX-f7Qg",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/c3h0ZVOIxk6rBtjqWohoog",
+  "Created": "2026-03-31T15:47:49.8543263Z",
+  "Updated": "2026-03-31T15:47:49.8543263Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

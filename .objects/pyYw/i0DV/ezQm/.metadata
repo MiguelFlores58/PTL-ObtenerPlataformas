@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome monext.xiga.com.mxMenuFrame.aspx#",
+  "Type": "Screen",
+  "Id": "ezQm5aw0xEqkjy35A9VFBw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/ezQm5aw0xEqkjy35A9VFBw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/i0DV3Mh8zUyIJppwBbLtUA",
+  "Created": "2026-03-27T18:49:09.7019604Z",
+  "Updated": "2026-03-27T18:49:09.7019604Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

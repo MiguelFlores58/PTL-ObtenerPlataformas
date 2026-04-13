@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Iniciar Sesión",
+  "Type": "Screen",
+  "Id": "vHOP9-wrAkuCupEtNT3Y8Q",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/vHOP9-wrAkuCupEtNT3Y8Q",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/1fDkz32NhUmAyDgAmIPKJw",
+  "Created": "2026-03-23T20:07:02.9326115Z",
+  "Updated": "2026-03-23T20:07:02.9326115Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

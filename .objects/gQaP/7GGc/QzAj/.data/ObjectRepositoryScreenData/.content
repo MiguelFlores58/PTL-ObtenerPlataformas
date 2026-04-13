@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="DGQCOxSbfUWIhIDOqz4jSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAYAAAAv3j5gAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTlIA0EYhb/EIyJRC1OIWGwRrRRERSwliiIohBjBqIW7GxOF7CbsRmwsBVvBwqPxKmystbWwFQTBA8TSykrRRmT9JwkkCBEcGObjzbzHzBvwH2ZMy63tBcvOO7HxiDabmNMCL9TTTAsBfLrp5qamx+JUHZ93+NR626Oy+N9oSi65Jvg04WEz5+SFF4UH1/I5xbvCIXNZTwqfCXc7ckHhB6UbRX5VnC6wX2WGnHhsRDgkrKUr2Khgc9mxhAeEw0nLlnz/bJGTitcVW5lVs3RP9cLgkj0zrXSZHYwzwRRRNAxWWSFDnh5ZbVFcYrIfqeJvL/ij4jLEtYIpjlGyWOgFP+oPfnfrpvr7iknBCNQ9e957JwS24XvL876OPO/7GGqe4NIu+7OHMPQh+lZZCx9AywacX5U1YwcuNqHtMac7ekGqkelPpeDtVL4pAa030Dhf7K20z8k9xKWryWvY24eutGQvVHl3Q2Vvf54p9fcD+vxyd4PEuWIAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAHdElNRQfmBg4PCQnAFJR8AAACIklEQVRIS62WTUtUYRTHheobVNDG6huEx03HFr0piYsWBhYiCL1gL0S0kYzS+gJSln2A3pYpiIFWQi0KJnDjBK2kwM683EZ0Xi4zzp0Tz6U7zTznzHXu2B9+m/ucc353YDj3aWuzQgi7CeEUITwihLeE8L4J3hHCa0K4Rgj77ZkihHCEEGKEUCEEbpFNQhg1L2zP90MI3YSQVRpb5SUh7LElhwjBUYp3yrgteqEUqSQGzolnIeQJoT2Q7CUEVylScVdWOHX7lngewv1A1KccqqTv3mH2PM7HYuIshMVAdFk5VCksL7NJpVTi1Mglcd6AeCC6qhwKUjevc6Vc9kUmuU8fRU0DvkcS5b98rkpMPNfl5OB5UafQvCh5cZgrxWKdyCS7sCBqFZoXZZeWbIcfL5fjRP9ZUd+SKDHQz16hYDuq2Zh5I3paEm3Oz9uz61JeX2fqPi76IouKP3/Ys0XS4/dEXzTR0Q7echx7rkhm+qnsjSQyv2h11Z4rkh4bFX2aKHQzbMzO2HPrsuWkmU4eE301fAtEobsu0XuaS2tr9nw/ZlNkph6LHovqrtu33fZODl1gNx73F2oQ82/LPJsWtQr/vkl/v4Z2QT1dnZwaucKZJ1PsPJxg6jkhayQFQjhYKzpMCL+Vwp3yoCqpkfX85zvDK3FnCEIIQAhflaYomJcd+9XoFhSEujp3EcIZQpgkhDlC+NAEi4TwnBBuEMIBe6bJH4ccxzFrKe52AAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='Login PowerGAS' /&gt;" Url="https://www.powergas.mx/Login.aspx?ReturnUrl=%2f" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="f71182bc93ba213f0f761e185e5ef570.jpg" xmlns="">0W4_9_4W610qMZBKRbzMq1g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v9xRH70YPkazSPiTWFMxQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="powergas.mx/Login.aspx" DesignTimeRectangle="1271, 499, 108, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnLogin' tag='INPUT' /&gt;" Guid="7b5f9923-4bc4-41c9-b182-9da4d8dcc015" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login PowerGAS' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ba9dbb1773ee3a02337af19b0cd75440.jpg" xmlns="">0QBMHrwMnc0GoADZ0UJwaKg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

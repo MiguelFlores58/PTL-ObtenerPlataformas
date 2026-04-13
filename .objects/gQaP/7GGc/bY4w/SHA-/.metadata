@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Desde",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "SHA-pnvhzE-92Xd_FyBpkw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/SHA-pnvhzE-92Xd_FyBpkw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/bY4wilsIfUK-nJr2eQDE_Q",
+  "Created": "2026-03-30T18:57:50.5843713Z",
+  "Updated": "2026-03-30T18:57:50.5843713Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

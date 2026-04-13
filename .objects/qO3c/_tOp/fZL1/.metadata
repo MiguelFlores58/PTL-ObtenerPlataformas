@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Energex - Log in",
+  "Type": "Screen",
+  "Id": "fZL13SZPU0q3onX6VAtTyw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/fZL13SZPU0q3onX6VAtTyw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/_tOptV_s1k6FFLzEDlZrhA",
+  "Created": "2026-03-23T19:52:49.517813Z",
+  "Updated": "2026-03-23T19:52:49.517813Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

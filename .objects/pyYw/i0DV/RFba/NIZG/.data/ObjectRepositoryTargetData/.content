@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="efX1JHuK3Ueheg6wH1bmEw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="xiga.mx/acceso-clientes" DesignTimeRectangle="561, 595, 88, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='link-details' href='https://monext.xiga.com.mx/' parentid='content' tag='A' /&gt;" Guid="193fe516-c6c8-4e1d-a71d-3c6b2a3b2da4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Acceso a clientes – Monedero XIGA' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0e9202bd3c766a5a6c2a273508eb557e.jpg" xmlns="">0W9Gq9DdW70G_LIwrD4LSOA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

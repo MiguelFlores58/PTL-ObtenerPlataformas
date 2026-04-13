@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EXGNx_qMJ0mPlXa8SYd9FQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sso.edenred.com.mx/ssov280/Account/LogOn" DesignTimeRectangle="783, 669, 370, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ButtonLogin' tableRow='9' tag='INPUT' /&gt;" Guid="86190275-f242-426a-9a4f-043d50c81f4c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a Edenred Secure' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d756faf47d0fb9cf4af04f2e931e73d4.jpg" xmlns="">0iOHKZ9Ykx0i2uH_DiSwZbg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

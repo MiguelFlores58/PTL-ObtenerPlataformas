@@ -1,0 +1,412 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Santander_GetNet_Download_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,3819" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="572,3796" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome Acceso a clientes – Monedero XIGA" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="538,3713" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="65445722-af6b-445b-9706-0d99b41a5432" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,3519" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'BIENVENIDO'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx" DesignTimeRectangle="300, 481, 572, 46" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='textbox_form' placeholder='Usuario' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c0efa998-e7c7-4d08-980d-453d5f185db4" InformativeScreenshot="acaf20bfe0f374b9e0399f795c3f0769.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XIGA' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="300, 432, 572, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='' aaname='BIENVENIDO' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='BIENVENIDO' /&gt;" Guid="cc93a840-fd87-4107-95aa-d347f014ef14" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT ctl00_ContentPlac…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Text="[in_Password]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx" DesignTimeRectangle="300, 547, 572, 46" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" Guid="dd9a4791-f18d-41fb-9950-3290809fafc5" InformativeScreenshot="3dc932abc916919e36ce3f8141ffc76f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XIGA' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ingresar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/Login.aspx" DesignTimeRectangle="300, 606, 572, 41" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" Guid="f0c21833-67e6-4527-b5fb-d54fa367c772" InformativeScreenshot="fbf1ee59337a9c1c7ebd79bb09514aed.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='XIGA' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reportes'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" ContentHash="RCSLfUmQR0OnnPdo83jvUg" DesignTimeRectangle="8, 244, 250, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                            Reportes                                              ' tag='A' /&gt;" Guid="bb7d9cb1-e8bf-4973-babd-f18d4de28e20" InformativeScreenshot="92a847da7d59f8a2daa03908528f41d5.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/NJWB60DKXk29FkfTI8ny4A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Consumos Por Estación'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" ContentHash="Z2bImLD2tkGEc4AXFg8qPg" DesignTimeRectangle="8, 333, 250, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Consumos Por Estación' tag='A' /&gt;" Guid="8c26f296-4f57-4ac2-8ad5-d4ca85f35c22" InformativeScreenshot="83087372ea05e18544b348e25c1e10a6.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/66XXCqTQcUyHHyHEBt916w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Hoy'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" ContentHash="yv65Mp6QBEW4XAHg6Kk-6A" DesignTimeRectangle="446, 251, 350, 24" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddl_type' tableRow='1' tag='SELECT' /&gt;" Guid="b26a84b5-30ac-4ea1-b8f0-2661cf7a038e" InformativeScreenshot="2843aec743319fd1d738530c438bfd26.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/j7ZqznGKskqLKJa53XsZ8Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts 'Por Rango de Fechas'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,350" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Shortcuts="[d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Down)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5">
+                <uix:NKeyboardShortcuts.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" ContentHash="Z6yHLG_aaEq1GT-I9FG7vw" DesignTimeRectangle="446, 251, 350, 24" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddl_type' tableRow='1' tag='SELECT' /&gt;" Guid="900c5cf4-398d-4adf-a3c3-e4a44f2e1491" InformativeScreenshot="48eabf56e537f2a6a313499f501c507c.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/akjQjKh1hE-_bM4ehTN30Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NKeyboardShortcuts.Target>
+              </uix:NKeyboardShortcuts>
+              <uix:NSetText AlterIfDisabled="True" DisplayName="Set Text" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,195" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Text="01/03/2026" Version="V5">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="836, 303, 351, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='fromDate' tableRow='1' tag='INPUT' /&gt;" Guid="c62a4d63-dc5e-4e3a-991e-1a7d799644fd" InformativeScreenshot="a688d9b039f7e40500aedb8d942ae63d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <uix:NSetText AlterIfDisabled="True" DisplayName="Set Text '30/03/2026'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="502,195" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Text="30/03/2026" Version="V5">
+                <uix:NSetText.Target>
+                  <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="1227, 303, 350, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='toDate' tableRow='1' tag='INPUT' /&gt;" Guid="8c07138b-e214-4efe-b63d-90b03bdc84fd" InformativeScreenshot="ae7cadc93fa2cb5b81b85e379992b51b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NSetText.Target>
+              </uix:NSetText>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="502,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d096eaea-6c9b-491a-9246-a4d1353ad2ac" InformativeScreenshot="6be03886d3b5ffee67dbf906c4d641ac" Selector="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='btn' tableRow='1' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" sap2010:Annotation.AnnotationText="Se debe desactivar la eleccion de guardado del excel" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="502,1128" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" Timeout="120">
+                <ui:GetLastDownloadedFile.Body>
+                  <ActivityAction>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,805" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'Excel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="65445722-af6b-445b-9706-0d99b41a5432" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="1781, 509, 47, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl id='btn_excel' tag='DIV' /&gt;" Guid="8d15597e-e573-41f9-a904-1debac60235e" InformativeScreenshot="0e8b7d8ae8b34dfa7f529c7bffd28e95.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="74a0b3cf-0ec4-4c00-bece-f907d2664b9c" DisplayName="CV Screen Scope 'pane'" sap:VirtualizedContainerService.HintSize="434,551" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                        <p:CVScope.Body>
+                          <ActivityAction x:TypeArguments="x:Object">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                            </ActivityAction.Argument>
+                            <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: CloseButton (468,7,19,18)&quot; +&#xA;&quot;Anchor: Text 'Descargado!' (168,224,163,32)&quot;]" DesignTimeCacheId="74a0b3cf-0ec4-4c00-bece-f907d2664b9c" DesignTimeScaleFactor="1" DisplayName="CV Click - 'CloseButton'" sap:VirtualizedContainerService.HintSize="400,210" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="db0b382a1c97c5f78bd1696ecb73b39e" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                                <p:CvClickWithDescriptor.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </p:CvClickWithDescriptor.CursorPosition>
+                                <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                                  <uc:CvDescriptor Id="24eded58-c52b-4ae9-87f7-376bf58df406">
+                                    <uc:CvDescriptor.Anchors>
+                                      <x:Array Type="uc:CvElementDescriptor">
+                                        <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="168, 224, 163, 32" ElementType="Text" Text="Descargado!" />
+                                      </x:Array>
+                                    </uc:CvDescriptor.Anchors>
+                                    <uc:CvDescriptor.Target>
+                                      <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="468, 7, 19, 18" ElementType="CloseButton" />
+                                    </uc:CvDescriptor.Target>
+                                  </uc:CvDescriptor>
+                                </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                                <p:CvClickWithDescriptor.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="9784966b-1994-48b7-b8f3-81f1bc626d6c">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </p:CvClickWithDescriptor.Target>
+                              </p:CvClickWithDescriptor>
+                            </Sequence>
+                          </ActivityAction>
+                        </p:CVScope.Body>
+                        <p:CVScope.DesignTimeCache>
+                          <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                        </p:CVScope.DesignTimeCache>
+                        <p:CVScope.DesignTimeCacheContainer>
+                          <uc:CvCacheContainer>
+                            <uc:CvCacheContainer.Caches>
+                              <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                                <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'about:blank (Main)" Id="74a0b3cf-0ec4-4c00-bece-f907d2664b9c" InformativeScreenshot="f70c2481bd2ee1a82b6a037a6116f0de" LogicalPosition="1928, 390" OcrText="about:blank - Google Chrome _ X i about:blank ...r Automation 24.10&quot; comenzó a depurar este navegador Cancelar X Descargado!" Position="1928, 390" ScreenshotGuid="29681491-c063-427a-8e92-36b60ad9ef1b" ServerVersion="24.10">
+                                  <uc:CVCache.CvAnchorRelations>
+                                    <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="0" />
+                                  </uc:CVCache.CvAnchorRelations>
+                                  <uc:CVCache.CvUiElements>
+                                    <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="16">
+                                      <uc:CvElementInfo Category="Icon" Description="Icon" Region="473, 37, 21, 21" />
+                                      <uc:CvElementInfo Category="Button" Description="Button" Region="361, 71, 90, 42" />
+                                      <uc:CvElementInfo Category="Icon" Description="Icon" Region="3, 6, 19, 18" />
+                                      <uc:CvElementInfo Category="MaximizeButton" Description="MaximizeButton" Region="422, 7, 19, 18" />
+                                      <uc:CvElementInfo Category="CloseButton" Description="CloseButton" Region="468, 7, 19, 18" />
+                                      <uc:CvElementInfo Category="CloseButton" Description="CloseButton" Region="464, 82, 20, 20" />
+                                      <uc:CvElementInfo Category="Icon" Description="clock icon" Region="8, 39, 18, 18" />
+                                      <uc:CvElementInfo Category="MinimizeButton" Description="MinimizeButton" Region="376, 6, 19, 17" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="5, 32, 466, 31" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="Button" Confidence="Runtime" Region="7, 38, 20, 21" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="377, 10, 17, 14" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="464, 82, 20, 19" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="MaximizeButton" Confidence="Runtime" Region="374, 7, 22, 19" />
+                                      <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="468, 7, 19, 18" />
+                                    </scg:List>
+                                  </uc:CVCache.CvUiElements>
+                                  <uc:CVCache.OcrTexts>
+                                    <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="19">
+                                      <uc:OcrTextInfo Region="23, 9, 66, 13" Text="about:blank" />
+                                      <uc:OcrTextInfo Region="89, 10, 7, 11" Text="-" />
+                                      <uc:OcrTextInfo Region="97, 9, 41, 16" Text="Google" />
+                                      <uc:OcrTextInfo Region="139, 8, 45, 14" Text="Chrome" />
+                                      <uc:OcrTextInfo Region="377, 4, 15, 14" Text="_" />
+                                      <uc:OcrTextInfo Region="469, 8, 15, 15" Text="X" />
+                                      <uc:OcrTextInfo Region="13, 42, 7, 11" Text="i" />
+                                      <uc:OcrTextInfo Region="35, 41, 77, 13" Text="about:blank" />
+                                      <uc:OcrTextInfo Region="14, 87, 18, 11" Text="...r" />
+                                      <uc:OcrTextInfo Region="31, 85, 72, 13" Text="Automation" />
+                                      <uc:OcrTextInfo Region="103, 85, 39, 14" Text="24.10&quot;" />
+                                      <uc:OcrTextInfo Region="143, 85, 55, 13" Text="comenzó" />
+                                      <uc:OcrTextInfo Region="199, 87, 9, 12" Text="a" />
+                                      <uc:OcrTextInfo Region="209, 85, 49, 16" Text="depurar" />
+                                      <uc:OcrTextInfo Region="258, 86, 26, 13" Text="este" />
+                                      <uc:OcrTextInfo Region="285, 85, 64, 16" Text="navegador" />
+                                      <uc:OcrTextInfo Region="379, 85, 55, 14" Text="Cancelar" />
+                                      <uc:OcrTextInfo Region="467, 85, 13, 13" Text="X" />
+                                      <uc:OcrTextInfo Region="168, 224, 163, 32" Text="Descargado!" />
+                                    </scg:List>
+                                  </uc:CVCache.OcrTexts>
+                                </uc:CVCache>
+                              </scg:List>
+                            </uc:CvCacheContainer.Caches>
+                          </uc:CvCacheContainer>
+                        </p:CVScope.DesignTimeCacheContainer>
+                        <p:CVScope.OCREngine>
+                          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                            <ActivityFunc.Argument>
+                              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                            </ActivityFunc.Argument>
+                            <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" UseSeparateOcrProcess="True" />
+                          </ActivityFunc>
+                        </p:CVScope.OCREngine>
+                        <p:CVScope.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fcd3a748-943d-4307-a33c-71ac02a854ae" InformativeScreenshot="1bb0974ff14be0f456b43b63e713872b" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='about:blank - Google Chrome' /&gt;&lt;ctrl name='about:blank - Google Chrome - Miguel Angel' role='pane' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" WaitForReady="INTERACTIVE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </p:CVScope.Target>
+                        <p:CVScope.UseLocalServer>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </p:CVScope.UseLocalServer>
+                      </p:CVScope>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:GetLastDownloadedFile.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:GetLastDownloadedFile>
+              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;XIGA_&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="502,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strArchivoDescargado.FullName]" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.DialogHandling>
+          <uix:DialogHandling ConfirmDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.OK]" DismissConfirms="True" DismissPrompts="True" PromptDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]">
+            <uix:DialogHandling.PromptDialogResponseText>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:DialogHandling.PromptDialogResponseText>
+          </uix:DialogHandling>
+        </uix:NApplicationCard.DialogHandling>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" Arguments="--disable-geolocation --disable-save-password-bubble --disable-autofill --disable-notifications --disable-popup-blocking" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALESURBVDhPdZJbSJNhGMdfgi4LJEuaZy1smZV+39Yytdl005yHTcMKEyGP9XmqFVYXWiJhJ+xIuW8e59ly+yxEMEEoRK2bLqqLoIs0ilIRlX1O/f7xbWVO6+L3PrwXz+99Ht4/AUB0DNekY7iJ34yv4s89JOz0COmrziMwexOepYjYJ+I4dGct0BX2QsdwSGUsSGaeI6LkNcJLhh014MzHZ9kGM0H9TrJcF/IPAWO9qWOcghSmF/FF/SjKe4KLOTUozXmIU5nNeFOTFoM2H9pmlMl5ltq8RsB5ic16xgp56SjO59wXEL9JwNEtWEjYjqXD7sAlP9i7FOCNFHiW+rxWINItvk6XjmEoPXEZmg2YTfTFXKIP5mK8MJMaCL6eBt9Ii4L5dQI9Yz0YWfIKWQXNsGk9BV7riemkwBUmlX6YrwwR7N1ycYpyF0FM/gBR5b0ku4rff+rLOAHEESwle2I5WbLCYrQHkOkNtAcDTVIPF8HJoi6SfK6XpBc81X5IoDCfIMFE0m58TZL+RSvFuCoIP6roWzMtEa6/MF0bTmYbaTL5QKFKibsNWtkIddwjxGpcOaK8h7SslmsZF3pcBWiQEjQEEVg83l0uuIKN9AD2a8zYq25xomlFcHQTQhM7oC4ctMfmD7i5CMRg2Fg6FO078OVuNPYozQKtakSEhl1BoXyM+MxOHDP0iXkxrBPwLGVeMoUBnf5CcWa5sFXGIVxtgiK2DvJoFhFxJugLOeiLHYH7uVawjWcp2Iw00O2L0etawV3GCf6HuhAU1YZAWSsOpHE4bngBHWMVBVMuAhtLVSywjoTBLk5Rvw9vqxMwVKnHcFUSxm5EoqLsTqo8d0SVVmhR6RhO4iKYN4qNToHNKMOiKRToCAQ6A5zV6tY/VRtFlLmDRFPQ7wje2hV6eJb6/h++2VlKhhYJYa+WEVn2MElZJfgFz5lfxqXYlq0AAAAASUVORK5CYII=" InformativeScreenshot="dd8fac2cc72f18dc99e3e75a562b391f.jpg" Selector="&lt;html app='chrome.exe' title='XIGA' /&gt;" Url="https://monext.xiga.com.mx/" Version="V2">
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

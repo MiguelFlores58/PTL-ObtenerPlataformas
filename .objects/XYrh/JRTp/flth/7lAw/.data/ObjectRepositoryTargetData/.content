@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6Exf8pt91kOM3S1dWd9_0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="globalgetnet.com/XUI" DesignTimeRectangle="1031, 684, 362, 49" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='floatingLabelInput31' tag='INPUT' type='password' class='form-control' placeholder='Contraseña' aaname=' Contraseña ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b0447d33-1bdd-440f-aeb2-52f5979a3445" ScopeSelectorArgument="&lt;html app='chrome.exe' title='LoginV5' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1031, 684, 322, 49" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='callback_4' tag='LABEL' type='' class='pe-none' aaname=' Contraseña ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña' /&gt;" Guid="29b6ec61-f503-4599-b758-97ce06a0e435" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="708605e69302da909bddedac8133d97a.jpg" xmlns="">0fa3lc7K4kE-yhCGzoQiZkg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

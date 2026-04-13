@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="suatHQ40q0SMDSj6HnLhHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFZSURBVDhPpVK9K0dhGL3O4DdgM7CYic5MKZOUlJ3JYpFSFsmKRTYLFqXkD/gpH8WiTJSQhKhDYRFFPnL11HP19t7fcjOct+7zcZ5znvskaZom/0EuUBS5QFEkAkO0CBwVuCrwQOCNwEeBDwJvBR4L3BA4K7BbYClrrBI4LvBE4LPAd4Ff3ngt8FXgj8BvgR/+fS9wJSNo8glphE2BiwJVIWf4zAhqBM45a1gwLXDYbcTNpqgc+i8JbBc4KXDL7fQK7BF4JvBS4I7JFjjvxK2hgg6BgwJnBO4LXBPYILBL4KHAC4HLAvsFVmeD7WnzrR6Zp0DikkD4tq98gbbQdYFDAuszgu0K/gxTPsUsmPw4P2ZKrCBenOFJYF9AcB7l3wQuCKy1ggGX/xJYKLs1y5uFU4/bDdid2O9lZsHQ7JL3nGhCYJ3nOgXuCrzzKxwR2Pi3xPi2iyIXKIpftbIXdBX+fjsAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' title='Multicobros Banorte' /&gt;" Url="https://multicobros.banorte.com/internet/CIBV2/homepublico" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="13ba3b11a4ca68fabf77131e86fd7d5b.jpg" xmlns="">0WnHkgPCFLUmV0YdRWqmJvw</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

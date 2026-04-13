@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Summa Advanced(1)",
+  "Type": "Screen",
+  "Id": "pzTvTcCeGkWBV8kBRd8ykg",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/pzTvTcCeGkWBV8kBRd8ykg",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/xY_fQzVihketM98Uh-QcOg",
+  "Created": "2026-03-23T20:10:57.6442192Z",
+  "Updated": "2026-03-23T20:10:57.6442192Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

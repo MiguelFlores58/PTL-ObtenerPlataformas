@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1SlSzZKHYUeIscEXhpdRsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="304, 537, 736, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='ctl00$cphMain$fechaConsumoEs$txtFechas' tag='INPUT' type='text' class='form-control date-picker' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="774cdb3d-08a8-45c6-bde8-1d88ecf233df" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="304, 515, 39, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='multVistas' tag='LABEL' type='' class='' aaname='Fecha:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha:' /&gt;" Guid="0dde8d1c-2773-4885-922b-ab306999ea74" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c70bec3bdf87a26e6b8744624fe95d8.jpg" xmlns="">0YyR5-ozjy0Kqd04BTWVewA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Hasta",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "r9_bjkqF-UmMLadUtc_z5A",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/r9_bjkqF-UmMLadUtc_z5A",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/vHOP9-wrAkuCupEtNT3Y8Q",
+  "Created": "2026-03-30T19:24:39.0870298Z",
+  "Updated": "2026-03-30T19:24:39.0870298Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

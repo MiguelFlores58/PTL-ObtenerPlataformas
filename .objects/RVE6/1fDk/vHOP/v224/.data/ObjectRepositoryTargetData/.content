@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jIn5XLrxikind7NAJuvgTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="filialenergypoint.nexusfuel.com.mx" DesignTimeRectangle="171, 167, 24, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" Guid="42124220-7a90-4069-b278-a39c0f1bd9da" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="38c2ab9c9ba6397aaa4564b83e0be14a.jpg" xmlns="">0RFYVBYITH0iJaJr0_G0q1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

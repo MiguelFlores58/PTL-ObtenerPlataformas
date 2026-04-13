@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x5YpVFxBOky_eT4Th4B6mw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="globalgetnet.com/authentication/not-authenticated" DesignTimeRectangle="668, 295, 600, 546" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="e28f6c67-2fdc-477a-9612-1d260ba9691e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c8b50c7f9a23f2ecd3afbc75b16ec6f6.jpg" xmlns="">0E1LutmkpmUGyw2OxPCee2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

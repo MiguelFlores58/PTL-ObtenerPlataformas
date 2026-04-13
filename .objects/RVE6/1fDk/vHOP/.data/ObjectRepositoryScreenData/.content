@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="g2AoLqe_ZEO8HrIvv5RpKg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACgSURBVDhPY2AYfiA7bp15dty6IhDOSlhvYbn+orXl+oslUAxiM6LrAYPsuHX82XHrtmTHrfsPwukpG/+7zzj+33L9RXS83XL9RSF0/SAD4JpBGIdmZEMQLsmOW2eFrDm+cBu6BmzYGtmAUmQDQpr3oSvGhkuQDSij1ADKvAA1hPxAhBogkB23bivMAJKjEQag3ikG4ayE9aCEQ1xCGroAAA4BK7P5YnoqAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' title='Iniciar Sesión' /&gt;" Url="https://filialenergypoint.nexusfuel.com.mx/Account/Login?ReturnUrl=%2fAccount%2fLogOut" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="938f2bb6a53b66a0c9e627047f0739e3.jpg" xmlns="">0lJ12rNVx8EmCWHf14xad9Q</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

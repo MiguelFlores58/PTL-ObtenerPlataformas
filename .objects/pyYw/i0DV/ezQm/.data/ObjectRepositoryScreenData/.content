@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Cs2jpQyVCkuOfbTIj0c9Ig" Reference="jpfYyaO_M0CCtBQDB7o2IA/ezQm5aw0xEqkjy35A9VFBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" ContentHash="5Wt8YSsyA0q8zDGpg8ABuw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALESURBVDhPdZJbSJNhGMdfgi4LJEuaZy1smZV+39Yytdl005yHTcMKEyGP9XmqFVYXWiJhJ+xIuW8e59ly+yxEMEEoRK2bLqqLoIs0ilIRlX1O/f7xbWVO6+L3PrwXz+99Ht4/AUB0DNekY7iJ34yv4s89JOz0COmrziMwexOepYjYJ+I4dGct0BX2QsdwSGUsSGaeI6LkNcJLhh014MzHZ9kGM0H9TrJcF/IPAWO9qWOcghSmF/FF/SjKe4KLOTUozXmIU5nNeFOTFoM2H9pmlMl5ltq8RsB5ic16xgp56SjO59wXEL9JwNEtWEjYjqXD7sAlP9i7FOCNFHiW+rxWINItvk6XjmEoPXEZmg2YTfTFXKIP5mK8MJMaCL6eBt9Ii4L5dQI9Yz0YWfIKWQXNsGk9BV7riemkwBUmlX6YrwwR7N1ycYpyF0FM/gBR5b0ku4rff+rLOAHEESwle2I5WbLCYrQHkOkNtAcDTVIPF8HJoi6SfK6XpBc81X5IoDCfIMFE0m58TZL+RSvFuCoIP6roWzMtEa6/MF0bTmYbaTL5QKFKibsNWtkIddwjxGpcOaK8h7SslmsZF3pcBWiQEjQEEVg83l0uuIKN9AD2a8zYq25xomlFcHQTQhM7oC4ctMfmD7i5CMRg2Fg6FO078OVuNPYozQKtakSEhl1BoXyM+MxOHDP0iXkxrBPwLGVeMoUBnf5CcWa5sFXGIVxtgiK2DvJoFhFxJugLOeiLHYH7uVawjWcp2Iw00O2L0etawV3GCf6HuhAU1YZAWSsOpHE4bngBHWMVBVMuAhtLVSywjoTBLk5Rvw9vqxMwVKnHcFUSxm5EoqLsTqo8d0SVVmhR6RhO4iKYN4qNToHNKMOiKRToCAQ6A5zV6tY/VRtFlLmDRFPQ7wje2hV6eJb6/h++2VlKhhYJYa+WEVn2MElZJfgFz5lfxqXYlq0AAAAASUVORK5CYII=" Reference="jpfYyaO_M0CCtBQDB7o2IA/ezQm5aw0xEqkjy35A9VFBw" Selector="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" Url="https://monext.xiga.com.mx/MenuFrame.aspx#" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="f9443912b3e108976b3ad425e8d658fa.jpg" xmlns="">0ag0xuGcotU67jsvxrWIi-Q</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

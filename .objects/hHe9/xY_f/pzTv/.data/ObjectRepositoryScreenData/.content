@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="XF3nX5IWy0yWNyHv9-gtPg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACB0lEQVRYR+1WsUpDMRTtJ/gJhfxA/ADRWRzcBLN00L2Tg4MIujkUN5066FqKk+BgwUlQcCtuOujkIArOkRPyJO/k5r2kdtMDh5b3bu45Se5NXqfzjwIobbpKm77SZqi0mRAHSpue0maBx/0aSpsVL2IzOcYYzlMMP+MSYSZWZbYVUdpopc27kLSUD8jF+RvRJL6zd2qvru/t9PHZAvw+QeTKM+GXPRJfXu3bj88vJxqC4xqIlWjfjtSeb24dsrYDx7VwwHo1+DbiQY5zMgCmu0Np8yQMcJyjgTHrOvjC4+AfhgZeXt/s7d3UHp+M7MHRmStKqT4AxHIusRZ8z3JgZADCVQeEGF3ciM8BdA7l67F+svhCA5hNSgSACWkl8JzyxcUotR4bQKI2YDsYME35JqwPAxxUI86BHAOoCwnFBiTkGEBRYrWYOQZqWyAhxwC2gCcjUDRQK0IUHCPVARXwHkUoCDKHrB+14fD8kvM7pNoN4pVpQZDZZ30YWA+DUHQpQAwGYQb/8RuumCDI7LK+Ax/Faxu7UTGFxAEjQRAMGe9/BaXNvjAgyfB4DsFxxPRlBPAqNHEGA+nZV2i7lNoMNHQB2jy+hCQ0fRekDKAYcQgtLm1HcUWfZBVyTWSwXLyC347smhCIw01uuRL47igxgtj4zv8t/GGFExMzC+8OCOIZjM623H8W34UDyv/MkpRFAAAAAElFTkSuQmCC" Selector="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=798a98f2c6a156d50069c19acc70bd91ceb96cb0d3562210b5cfe732fa0ba11057' title='Grupo Financiero Inbursa' /&gt;" Url="https://www.inbursa.com/sites/gfi/home" Version="V2">
+      <imageRef attrName="InformativeScreenshot" originalValue="0693b130d86bb2960d883c51bda61ca1.jpg" xmlns="">0v-RZtVsR60ug7s5S-yGSZA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

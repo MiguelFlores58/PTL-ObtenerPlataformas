@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yv65Mp6QBEW4XAHg6Kk-6A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="446, 251, 350, 24" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ddl_type' tableRow='1' tag='SELECT' /&gt;" Guid="b26a84b5-30ac-4ea1-b8f0-2661cf7a038e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2843aec743319fd1d738530c438bfd26.jpg" xmlns="">0lnEeE_yM2Umiv3Rstay3hA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

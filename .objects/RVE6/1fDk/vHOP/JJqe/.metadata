@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Reportes",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "JJqeUKezHkCg0bqX3W8GXw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/JJqeUKezHkCg0bqX3W8GXw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/vHOP9-wrAkuCupEtNT3Y8Q",
+  "Created": "2026-03-30T19:22:48.2213563Z",
+  "Updated": "2026-03-30T19:22:48.2213563Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6YLilWkzw0SLhb4LJcQbNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facturacion.efectivale.com.mx/SummaWeb/Login.aspx" DesignTimeRectangle="865, 311, 242, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TxtUsuario' tag='INPUT' type='text' class='form-control' aaname='Usuario' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8cbddd25-73f8-4bfe-8d05-266f77961cb5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="829, 285, 47, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='lUsuario' tag='LABEL' type='' class='cols-sm-2 control-label' aaname='Usuario' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario' /&gt;" Guid="fdc06901-17fd-4c84-8650-0c840a4ae137" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2f50024bcd9b0949fd8940e11c18f379.jpg" xmlns="">0SyGZTYl1NEOslfnJJ_x50w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

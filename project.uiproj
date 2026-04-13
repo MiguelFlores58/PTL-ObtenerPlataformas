@@ -1,0 +1,6 @@
+{
+  "Name": "PTL-ObtienePlataformas",
+  "ProjectType": "Process",
+  "Description": "Obtiene los estados de cuenta de las plataformas",
+  "MainFile": "Main.xaml"
+}

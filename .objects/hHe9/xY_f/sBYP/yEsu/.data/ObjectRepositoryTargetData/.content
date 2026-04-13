@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LbRDMKmde0aCRlzf3Dknsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="facturacion.efectivale.com.mx/SummaWeb/Login.aspx" DesignTimeRectangle="1031, 510, 76, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnIngreso' tag='INPUT' /&gt;" Guid="3b7d4889-e929-4479-ba82-8df4286a594e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="78f48b0f4c9537b668cae1f32b1758cb.jpg" xmlns="">0ozKUVj3wk02Wy31kxuUYgA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

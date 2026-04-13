@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Login PowerGAS",
+  "Type": "Screen",
+  "Id": "bY4wilsIfUK-nJr2eQDE_Q",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/bY4wilsIfUK-nJr2eQDE_Q",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/7GGcpNm7oEOxlmvpykm_Rg",
+  "Created": "2026-03-30T18:49:52.0899674Z",
+  "Updated": "2026-03-30T18:49:52.0899674Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

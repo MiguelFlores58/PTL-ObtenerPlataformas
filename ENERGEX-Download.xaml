@@ -1,0 +1,318 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Santander_GetNet_Download_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,3850" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="624,3827" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Energex" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="590,3744" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,3550" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="recargasenergex.net" DesignTimeRectangle="615, 288, 150, 150" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl src='img/estaciones_4.jpg' tableRow='1' tag='IMG' /&gt;" Guid="f3eb178e-a6b9-4f50-b2e3-c5a21e5b190e" InformativeScreenshot="4747ac9876c3801dd8b0b9f9d1b335a8.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/index.php" DesignTimeRectangle="445, 270, 177, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='myusername' type='text' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fa8c216e-f0b6-4628-824d-f63c2ff0f1f2" InformativeScreenshot="93f6bcd3651cdc0c8553952caf8149bb.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="377, 275, 64, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='Estilo5' aaname='Usuario' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario' /&gt;" Guid="ce17860c-ea55-4af9-9c38-142037f19822" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Text="[in_Password]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/index.php" DesignTimeRectangle="445, 295, 177, 21" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='mypassword' type='password' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8c841e81-5be9-4389-9e5e-6382b3e87053" InformativeScreenshot="ac738cf5957743ef41098c71b1fd8afb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="377, 300, 64, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='' aaname='Contraseña ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña' /&gt;" Guid="e3040458-0e45-415c-a66c-9cf7fa470f3c" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="554,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/index.php" DesignTimeRectangle="509, 320, 49, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" Guid="a4f90ac6-ac96-4312-bc16-5ebff057915c" InformativeScreenshot="695fbbcfda13d6358c6c0dc9ae48714c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="554,2496" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="552,2061" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence sap:VirtualizedContainerService.HintSize="518,2001" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reportes'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/monitores.php" DesignTimeRectangle="9, 336, 125, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Reportes' tableRow='3' tag='SPAN' /&gt;" Guid="585c19fa-20b3-4237-8bcf-a6493ebc6399" InformativeScreenshot="7ce571859c6e7c661864389a5d58dabe.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Monitor de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'de Transacciones'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/monitores.php" DesignTimeRectangle="9, 360, 125, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='de Transacciones' tableRow='3' tag='A' /&gt;" Guid="1e8abbf5-d4e3-4ff8-aedd-09539985c737" InformativeScreenshot="b432a2891af9f2498d94461d37ce142e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Monitor de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Fecha Inicial" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Text="2026-03-01" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/reporte_transacciones.php" DesignTimeRectangle="371, 268, 107, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='campo_fecha' tableRow='1' tag='INPUT' /&gt;" Guid="fc98e724-f9b7-48e9-9c22-cd1c3bb2c388" InformativeScreenshot="49294ab593181545d7a96a1005c17d0e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ENERGEX - Reporte de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Fecha Final" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Text="2026-03-31" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/reporte_transacciones.php" DesignTimeRectangle="600, 268, 107, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='campo_fecha2' tableRow='1' tag='INPUT' /&gt;" Guid="52a99367-bdad-43c2-a6ed-6e42c77d0d29" InformativeScreenshot="b43bc10211b10540a456e3d254fa90c1.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ENERGEX - Reporte de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Buscar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/reporte_transacciones.php" DesignTimeRectangle="802, 268, 58, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' type='submit' /&gt;" Guid="4b6a2375-0ec0-4149-8b42-c6b6b5ea6d09" InformativeScreenshot="9e1ce15c7228618cf01a7a1194e062e0.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ENERGEX - Reporte de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="484,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                      <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="484,537" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                        <ui:GetLastDownloadedFile.Body>
+                          <ActivityAction>
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Exportar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/reporte_transacciones.php" DesignTimeRectangle="959, 293, 16, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="c4f4a79a-d2f9-45cb-8ae9-9641e9597f26" InformativeScreenshot="fd1c2ae3f10db65cd10be38ab5d13030.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ENERGEX - Reporte de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:GetLastDownloadedFile.Body>
+                      </ui:GetLastDownloadedFile>
+                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;ENERGEX-&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="484,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strArchivoDescargado.FullName]" />
+                    </Sequence>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="552,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/monitores.php" DesignTimeRectangle="9, 182, 981, 77" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="df060a9c-2d83-4df9-b650-e08173809e27" InformativeScreenshot="7f3c3c71f0dd315d38db41434906f88d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Monitor de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="554,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.DialogHandling>
+          <uix:DialogHandling ConfirmDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.OK]" DismissConfirms="True" DismissPrompts="True">
+            <uix:DialogHandling.PromptDialogResponseText>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:DialogHandling.PromptDialogResponseText>
+          </uix:DialogHandling>
+        </uix:NApplicationCard.DialogHandling>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" Arguments="--disable-geolocation --disable-save-password-bubble" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="94b9d6a1e6089ade0fc0c9f7a01debc4.jpg" Selector="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" Url="https://www.recargasenergex.net/" Version="V2">
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

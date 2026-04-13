@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Acceso a clientes – Monedero XIGA",
+  "Type": "Screen",
+  "Id": "RFbaiwnQRkSvbuNKRo0aHw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/RFbaiwnQRkSvbuNKRo0aHw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/i0DV3Mh8zUyIJppwBbLtUA",
+  "Created": "2026-03-23T19:58:53.812107Z",
+  "Updated": "2026-03-23T19:58:53.812107Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

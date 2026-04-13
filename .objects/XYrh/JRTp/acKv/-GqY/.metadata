@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Sesión expiradaTu sesió…",
+  "Type": "Element",
+  "Id": "-GqYvYQXsECaGWYQA-fi1Q",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/-GqYvYQXsECaGWYQA-fi1Q",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/acKv0b4IN0i1lxVq4GBN4g",
+  "Created": "2026-04-07T23:50:18.122373Z",
+  "Updated": "2026-04-07T23:50:18.122373Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

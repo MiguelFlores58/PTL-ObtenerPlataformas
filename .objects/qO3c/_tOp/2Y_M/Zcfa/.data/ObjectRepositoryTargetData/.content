@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Luqb0i_aIkm28r7_CGkTDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="recargasenergex.net" DesignTimeRectangle="615, 288, 150, 150" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl src='img/estaciones_4.jpg' tableRow='1' tag='IMG' /&gt;" Guid="f3eb178e-a6b9-4f50-b2e3-c5a21e5b190e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4747ac9876c3801dd8b0b9f9d1b335a8.jpg" xmlns="">05M9rVoy59U-BZxJUvtS0Gg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

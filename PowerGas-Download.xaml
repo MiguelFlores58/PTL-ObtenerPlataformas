@@ -1,0 +1,308 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Santander_GetNet_Download_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,3489" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="554,123" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="POWER GAS" />
+    <Sequence sap:VirtualizedContainerService.HintSize="554,3343" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome Login PowerGAS(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,3260" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,3066" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT UserName'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/Login.aspx" DesignTimeRectangle="1271, 379, 292, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='UserName' tag='INPUT' /&gt;" Guid="4de61f82-5e17-479b-90f7-9017a4cedb6f" InformativeScreenshot="5279050ac1e52710c0acfe00001c6d5c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login PowerGAS' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  Password'" sap:VirtualizedContainerService.HintSize="484,188" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[in_Password]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e7c49db4-95be-4651-b0c1-79b36b6e7fef" InformativeScreenshot="76c914324bea9f3252524df1f2e216d8" Selector="&lt;webctrl id='Password' tag='INPUT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Iniciar sesión'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/Login.aspx" DesignTimeRectangle="1271, 499, 108, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnLogin' tag='INPUT' /&gt;" Guid="7b5f9923-4bc4-41c9-b182-9da4d8dcc015" InformativeScreenshot="ba9dbb1773ee3a02337af19b0cd75440.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login PowerGAS' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'REPORTES'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/DASHBOARDESTACIONESWF.ASPX" DesignTimeRectangle="11, 681, 247, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                         REPORTES                         ' parentid='divMenu' tag='A' /&gt;" Guid="dedc9bee-6426-487d-8178-a94adf8283ac" InformativeScreenshot="3d58c39c340ea2991ef1bf110e0d0e10.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inicio estación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NSelectItem DisplayName="Select Item 'Reporte'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="CONSUMOS ESTACIONES" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="4">
+                    <x:String>--SELECCIONA UN REPORTE--</x:String>
+                    <x:String>CALIFICACIÓN DE ESTACIONES</x:String>
+                    <x:String>CONSUMOS ESTACIONES</x:String>
+                    <x:String>ÓRDENES DE PAGO</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="304, 472, 1578, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='SPAN' type='' class='select2-selection select2-selection--single' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="262872ec-bf6a-4cac-b70e-694762bec3f3" InformativeScreenshot="93f4d85b0807820362def2a9018ce6d2.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="304, 449, 49, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Reporte:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Reporte:' /&gt;" Guid="7db6e2d8-0030-4676-8f6f-1a2ec076ba12" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="3" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="1033, 536, 38, 34" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='input-group-addon' tag='SPAN' /&gt;" Guid="3f87f857-3d39-4b9c-9c99-458dcf537a44" InformativeScreenshot="e6820e6a88c025e654dfd02d0b5d4b60.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="1" DisplayName="Type Into 'Desde'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Text="01/03/2026" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="313, 867, 74, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='daterangepicker_start' tag='INPUT' type='text' class='input-mini' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="177c5dd0-18ca-474c-b574-f72e3950f43e" InformativeScreenshot="43ef3a03d16e25ccf334ca4f5ca8608d.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="313, 845, 74, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Desde' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='DESDE' /&gt;" Guid="63575f5c-ffbe-43b6-a128-ad68a9aec2d2" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayAfter="1" DisplayName="Type Into 'Hasta'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Text="30/03/2026" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="398, 867, 74, 30" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='daterangepicker_end' tag='INPUT' type='text' class='input-mini' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8641464e-e09f-47ce-bd35-53dc53079880" InformativeScreenshot="b2268252244461245060f8ff041c6fa2.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="398, 845, 74, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Hasta' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='HASTA' /&gt;" Guid="5b27ecf5-0827-4712-a198-c2aab1f184e5" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Aplicar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="313, 907, 57, 24" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Aplicar' tag='BUTTON' /&gt;" Guid="ce00f1e9-804b-48ce-8c01-52b75bb935d0" InformativeScreenshot="c13b51924eb326f9e7d77069adb4c913.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Generar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="1568, 750, 81, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                      Generar                                 ' tag='A' /&gt;" Guid="e4e729dc-8017-4969-a411-f5dccece698d" InformativeScreenshot="8bb00250ee323125d6847ab13bfb4101.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="484,537" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                <ui:GetLastDownloadedFile.Body>
+                  <ActivityAction>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="2" DisplayName="Click 'Excel'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="1701, 513, 65, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                      Excel                                 ' tag='A' /&gt;" Guid="8fd0e92a-aa5a-4d83-b3bd-8b64078a1197" InformativeScreenshot="26a0ca85517c7b7b0a9b15d46590679f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:GetLastDownloadedFile.Body>
+              </ui:GetLastDownloadedFile>
+              <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;POWERGAS-&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="484,193" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strArchivoDescargado.FullName]" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="484,185" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6b6724fb-3be5-4252-9345-306239fce0ae" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" ContentHash="lIpImgrtPUqM14k3mAnuvg" DesignTimeRectangle="1864, 196, 18, 18" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='icon-logout' css-selector='body&amp;gt;form&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a&amp;gt;i' tag='I' /&gt;" Guid="17778cb4-90cf-404e-949e-e98e0f7734a9" InformativeScreenshot="606979b17e0d84b070cf0fef05528bc5.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/Pp-d0z-J8kCGZW98_CJbKA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.DialogHandling>
+          <uix:DialogHandling ConfirmDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]" DismissConfirms="True" DismissPrompts="True">
+            <uix:DialogHandling.PromptDialogResponseText>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:DialogHandling.PromptDialogResponseText>
+          </uix:DialogHandling>
+        </uix:NApplicationCard.DialogHandling>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" Arguments="--disable-geolocation --disable-save-password-bubble" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAZCAYAAAAv3j5gAAABgmlDQ1BJQ0MgcHJvZmlsZQAAKM+VkTlIA0EYhb/EIyJRC1OIWGwRrRRERSwliiIohBjBqIW7GxOF7CbsRmwsBVvBwqPxKmystbWwFQTBA8TSykrRRmT9JwkkCBEcGObjzbzHzBvwH2ZMy63tBcvOO7HxiDabmNMCL9TTTAsBfLrp5qamx+JUHZ93+NR626Oy+N9oSi65Jvg04WEz5+SFF4UH1/I5xbvCIXNZTwqfCXc7ckHhB6UbRX5VnC6wX2WGnHhsRDgkrKUr2Khgc9mxhAeEw0nLlnz/bJGTitcVW5lVs3RP9cLgkj0zrXSZHYwzwRRRNAxWWSFDnh5ZbVFcYrIfqeJvL/ij4jLEtYIpjlGyWOgFP+oPfnfrpvr7iknBCNQ9e957JwS24XvL876OPO/7GGqe4NIu+7OHMPQh+lZZCx9AywacX5U1YwcuNqHtMac7ekGqkelPpeDtVL4pAa030Dhf7K20z8k9xKWryWvY24eutGQvVHl3Q2Vvf54p9fcD+vxyd4PEuWIAAAAJcEhZcwAADdYAAA3WAZBveZwAAAAHdElNRQfmBg4PCQnAFJR8AAACIklEQVRIS62WTUtUYRTHheobVNDG6huEx03HFr0piYsWBhYiCL1gL0S0kYzS+gJSln2A3pYpiIFWQi0KJnDjBK2kwM683EZ0Xi4zzp0Tz6U7zTznzHXu2B9+m/ucc353YDj3aWuzQgi7CeEUITwihLeE8L4J3hHCa0K4Rgj77ZkihHCEEGKEUCEEbpFNQhg1L2zP90MI3YSQVRpb5SUh7LElhwjBUYp3yrgteqEUqSQGzolnIeQJoT2Q7CUEVylScVdWOHX7lngewv1A1KccqqTv3mH2PM7HYuIshMVAdFk5VCksL7NJpVTi1Mglcd6AeCC6qhwKUjevc6Vc9kUmuU8fRU0DvkcS5b98rkpMPNfl5OB5UafQvCh5cZgrxWKdyCS7sCBqFZoXZZeWbIcfL5fjRP9ZUd+SKDHQz16hYDuq2Zh5I3paEm3Oz9uz61JeX2fqPi76IouKP3/Ys0XS4/dEXzTR0Q7echx7rkhm+qnsjSQyv2h11Z4rkh4bFX2aKHQzbMzO2HPrsuWkmU4eE301fAtEobsu0XuaS2tr9nw/ZlNkph6LHovqrtu33fZODl1gNx73F2oQ82/LPJsWtQr/vkl/v4Z2QT1dnZwaucKZJ1PsPJxg6jkhayQFQjhYKzpMCL+Vwp3yoCqpkfX85zvDK3FnCEIIQAhflaYomJcd+9XoFhSEujp3EcIZQpgkhDlC+NAEi4TwnBBuEMIBe6bJH4ccxzFrKe52AAAAAElFTkSuQmCC" InformativeScreenshot="f71182bc93ba213f0f761e185e5ef570.jpg" Selector="&lt;html app='chrome.exe' title='Login PowerGAS' /&gt;" Url="https://www.powergas.mx/Login.aspx?ReturnUrl=%2f" Version="V2">
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

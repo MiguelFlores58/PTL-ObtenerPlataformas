@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="69p5V9abBEOdZ3vag14SqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="powergas.mx/WEBFORMS/DASHBOARDESTACIONESWF.ASPX" DesignTimeRectangle="11, 681, 247, 42" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                         REPORTES                         ' parentid='divMenu' tag='A' /&gt;" Guid="dedc9bee-6426-487d-8178-a94adf8283ac" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inicio estación' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3d58c39c340ea2991ef1bf110e0d0e10.jpg" xmlns="">0Xt61MM9hx0SMujox2lQdxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

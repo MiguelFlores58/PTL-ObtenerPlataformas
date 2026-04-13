@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LdvXnimDlUG_j9OqlRnFuw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="973, 424, 202, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='text' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="65c0546e-0440-40f3-9641-4dcaff6b714e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=2bdfc881ea1cc2b00069c19eaf33e3d4453546f84a373df4d3965731e57b986682' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="900, 426, 57, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname=' Usuario: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario:' /&gt;" Guid="226ffacf-1f75-470d-a46e-b72e2b113657" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40a3d43d1ee18a9ec69773dff08a8961.jpg" xmlns="">0lcqS-f8lKU-pcb1A1NGS4w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

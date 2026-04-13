@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consumos Por Estación",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "66XXCqTQcUyHHyHEBt916w",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/66XXCqTQcUyHHyHEBt916w",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/RFbaiwnQRkSvbuNKRo0aHw",
+  "Created": "2026-03-27T18:46:36.2769538Z",
+  "Updated": "2026-03-27T18:46:36.2769538Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

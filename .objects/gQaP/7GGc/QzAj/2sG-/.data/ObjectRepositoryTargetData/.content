@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pJMXosER8EikeoR7e53vEQ" Reference="jpfYyaO_M0CCtBQDB7o2IA/2sG-zEjsi0WsMrYe1TulBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="powergas.mx/WEBFORMS/REPORTESWF.ASPX" DesignTimeRectangle="1033, 536, 38, 34" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='input-group-addon' tag='SPAN' /&gt;" Guid="3f87f857-3d39-4b9c-9c99-458dcf537a44" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Reportes' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e6820e6a88c025e654dfd02d0b5d4b60.jpg" xmlns="">0HJXg3TwJQU-iwan9qJmnGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

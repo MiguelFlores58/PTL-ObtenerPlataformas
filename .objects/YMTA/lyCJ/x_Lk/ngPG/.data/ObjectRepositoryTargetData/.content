@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9irmcmeUfU2va20VsMrPlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="multicobros.banorte.com/internet/CIBV2/homepublico" DesignTimeRectangle="362, 336, 199, 44" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="b7c3895b-e525-4452-b832-791d6125ce3f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Multicobros Banorte' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="942c48a5c8845ef61a808de117993abd.jpg" xmlns="">0VABMOlNjzkSHgEsCBFSwQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

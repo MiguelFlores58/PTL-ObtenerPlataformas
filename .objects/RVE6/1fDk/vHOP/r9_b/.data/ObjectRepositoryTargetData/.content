@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="q0pnnWJnB0mZtNNLnR3GLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="filialenergypoint.nexusfuel.com.mx/Report/AffiliatesConsumptions" DesignTimeRectangle="675, 415, 527, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='dtpFechaFin' tag='INPUT' type='text' class='validateFilters validateDate form-control' aaname='Hasta:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d52f6501-28bf-4a0e-b039-568db99a61d4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AffiliatesConsumptions' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="675, 394, 42, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='datepicker2' tag='LABEL' type='' class='control-label' aaname='Hasta:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Hasta:' /&gt;" Guid="4970b513-3b19-4697-9c41-3f042904b8a7" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3916f638c694123b7987ca04afcb285d.jpg" xmlns="">04YTV1lWdCkmqalCjxcul0g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

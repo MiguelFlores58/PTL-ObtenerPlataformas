@@ -1,0 +1,194 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Santander_GetNet_Download_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,1296" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="486,1273" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Bienvenido a Edenred Secure" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1190" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="50f918ee-c971-4d76-8ec4-ede0b05c4e1a" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,996" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  UserName'" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_UserName]">
+                <ui:TypeInto.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="87553d95-73e4-49ed-ba53-76d3872a7d14" InformativeScreenshot="5c151cbd42b996133159bf77f513fe00" Selector="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='UserName' tableRow='5' tag='INPUT' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:TypeInto.Target>
+              </ui:TypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continuar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="50f918ee-c971-4d76-8ec4-ede0b05c4e1a" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="sso.edenred.com.mx/ssov280/Account/LogOn" ContentHash="EXGNx_qMJ0mPlXa8SYd9FQ" DesignTimeRectangle="783, 669, 370, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ButtonLogin' tableRow='9' tag='INPUT' /&gt;" Guid="86190275-f242-426a-9a4f-043d50c81f4c" InformativeScreenshot="d756faf47d0fb9cf4af04f2e931e73d4.jpg" Reference="jpfYyaO_M0CCtBQDB7o2IA/o8VqeVaQn0-37HHzzq8Z9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a Edenred Secure' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="50f918ee-c971-4d76-8ec4-ede0b05c4e1a" Text="[in_Password]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="sso.edenred.com.mx/ssov280/Account/LogOn" DesignTimeRectangle="783, 634, 370, 27" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='TallyHawk' type='password' tag='INPUT' class='inputs NewStyle' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a6bba425-1b6d-4334-85d3-14bbf6ddbe3a" InformativeScreenshot="2fcda81f738a9c838eef770348c788bd.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a Edenred Secure' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="783, 600, 85, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='Label_Password' type='' tag='P' class='' aaname='Contraseña' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña' /&gt;" Guid="17d8ad18-87f5-4df2-8339-91a3a5f77f3f" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Iniciar Sesión'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="50f918ee-c971-4d76-8ec4-ede0b05c4e1a" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="sso.edenred.com.mx/ssov280/Account/LogOn" DesignTimeRectangle="783, 709, 370, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ButtonLogin' tableRow='9' tag='INPUT' /&gt;" Guid="8de889a7-4894-4a42-b1c2-ddfe57e6ba19" InformativeScreenshot="932e2f17ea1bb47ffe8224a2e94f2eeb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Bienvenido a Edenred Secure' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" Arguments="--disable-geolocation --disable-save-password-bubble" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="0b30ee356603353ff478c7ad8d2be75a.jpg" Selector="&lt;html app='chrome.exe' title='Bienvenido a Edenred Secure' /&gt;" Url="https://sso.edenred.com.mx/ssov280/Account/LogOn?ReturnUrl=%2fSSOV280" Version="V2">
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

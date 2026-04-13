@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Aplicar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "MpFNuif5_k-hOmWOG9dmfw",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/MpFNuif5_k-hOmWOG9dmfw",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/bY4wilsIfUK-nJr2eQDE_Q",
+  "Created": "2026-03-30T18:59:00.425017Z",
+  "Updated": "2026-03-30T18:59:00.425017Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

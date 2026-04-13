@@ -1,0 +1,13 @@
+﻿{
+  "Name": "CONSULTA Y DESCARGA DE …",
+  "Type": "Element",
+  "Id": "FlTbDg5jnU2Kr7zvAE5JwA",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/FlTbDg5jnU2Kr7zvAE5JwA",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/KyCO7vk7Zky2lIMFrViQEA",
+  "Created": "2026-03-30T21:53:43.9103561Z",
+  "Updated": "2026-03-30T21:53:43.9103561Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

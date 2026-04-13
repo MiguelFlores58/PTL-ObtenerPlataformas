@@ -1,0 +1,637 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
+    <x:Property Name="in_Password" Type="InArgument(x:String)" />
+    <x:Property Name="in_UserName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Santander_GetNet_Download_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,3654" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="556,3631" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Energex - Log in(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,3548" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="4c47be80-d134-4581-9f41-662b825b55e8" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,3354" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/Login.aspx" DesignTimeRectangle="865, 311, 242, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TxtUsuario' tag='INPUT' type='text' class='form-control' aaname='Usuario' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8cbddd25-73f8-4bfe-8d05-266f77961cb5" InformativeScreenshot="2f50024bcd9b0949fd8940e11c18f379.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="829, 285, 47, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='lUsuario' tag='LABEL' type='' class='cols-sm-2 control-label' aaname='Usuario' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario' /&gt;" Guid="fdc06901-17fd-4c84-8650-0c840a4ae137" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Clave'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Text="[in_Password]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/Login.aspx" DesignTimeRectangle="868, 375, 239, 34" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='TxtClave' tag='INPUT' type='password' class='form-control' aaname='Clave' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="722c54b4-163b-4441-9378-62ac4a1a3699" InformativeScreenshot="6aa0440b1d8a3021d4209bb406766f2f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="829, 350, 33, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='lClave' tag='LABEL' type='' class='cols-sm-2 control-label' aaname='Clave' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Clave' /&gt;" Guid="255b0345-a0ae-4e47-b647-ab8e996022ef" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Ingresar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/Login.aspx" DesignTimeRectangle="1031, 510, 76, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnIngreso' tag='INPUT' /&gt;" Guid="3b7d4889-e929-4479-ba82-8df4286a594e" InformativeScreenshot="78f48b0f4c9537b668cae1f32b1758cb.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click 'CONSULTA Y DESCARGA DE …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/webfrmPrincipal.aspx" DesignTimeRectangle="651, 344, 421, 115" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='IfPrincipal' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;" Guid="3220c4c8-ab0f-4f0f-ab8a-bc34e5ff6491" InformativeScreenshot="72089f192705341d34164e0d05d00fc8.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="486,123" sap2010:WorkflowViewState.IdRef="Delay_2" />
+              <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="486,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="01/03/2026" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fecha Desde'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/webfrmPrincipal.aspx" DesignTimeRectangle="39, 387, 225, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=093114087' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='ctrFechaDesde' tag='INPUT' type='text' class='ui-igedit-input hasDatepicker quasar-editorfecha' aaname='Fecha Desde' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f814feb3-d7d2-48c4-9761-2e3b05f50ec9" InformativeScreenshot="5f23faab651beaf4cd1a85a44d6e9878.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="38, 366, 73, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=093114087' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='lblctrFechaDesde' tag='LABEL' type='' class='' aaname='Fecha Desde' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha Desde' /&gt;" Guid="d1c0984f-70f9-47cf-a14d-3e96db7687ba" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts '01/03/2026'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,257" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(Tab)][u(hk)]" Version="V5" />
+              <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="486,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_2" Text="31/03/2026" />
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBetweenKeys="0.05" DisplayName="Type Into 'Fecha Desde'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Text="01032026[k(tab)]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/webfrmPrincipal.aspx" DesignTimeRectangle="39, 353, 225, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=170345478' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='ctrFechaDesde' tag='INPUT' type='text' class='ui-igedit-input hasDatepicker quasar-editorfecha' aaname='Fecha Desde' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b48d675b-57a9-4bca-a83a-3ac2ed2763a3" InformativeScreenshot="7e2612e035cbbb5e697f4049805e3b86.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="38, 332, 73, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=170345478' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='lblctrFechaDesde' tag='LABEL' type='' class='' aaname='Fecha Desde' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha Desde' /&gt;" Guid="bf1330d6-7b1e-4fc2-86e6-114a70434756" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBetweenKeys="0.05" DisplayName="Type Into 'Fecha Hasta'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Text="31032026[k(tab)]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="facturacion.efectivale.com.mx/SummaWeb/webfrmPrincipal.aspx" DesignTimeRectangle="351, 353, 225, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=170345478' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='ctrFechaHasta' tag='INPUT' type='text' class='ui-igedit-input hasDatepicker quasar-editorfecha' aaname='Fecha Hasta' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9720f072-0da6-432e-b973-157af37a8d44" InformativeScreenshot="60e69dfad10b5732096f6dbd5e0ad0e6.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="350, 332, 70, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=170345478' tag='IFRAME' matching:src='fuzzy' fuzzylevel:src='0.0' /&gt;&lt;webctrl id='lblctrFechaHasta' tag='LABEL' type='' class='' aaname='Fecha Hasta' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha Hasta' /&gt;" Guid="35acc141-cd09-43f1-972d-46001d1fb682" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="28357d99-ffe2-4fa9-9887-01e3ed6ca869" DisplayName="CV Screen Scope 'DIV  divPrincipal'" sap:VirtualizedContainerService.HintSize="486,560" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+                <p:CVScope.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Button (653,110,32,33)&quot; +&#xA;&quot;Anchor: Text 'Sucrusal' (653,54,50,13)&quot;]" DesignTimeCacheId="28357d99-ffe2-4fa9-9887-01e3ed6ca869" DesignTimeScaleFactor="1" DisplayName="CV Click - 'Button'" sap:VirtualizedContainerService.HintSize="400,210" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="79f51a3ccc11908522c1d421e6fbf297" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                        <p:CvClickWithDescriptor.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </p:CvClickWithDescriptor.CursorPosition>
+                        <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                          <uc:CvDescriptor Id="ec9ca171-9473-4af5-96ca-4a6bad98a0eb">
+                            <uc:CvDescriptor.Anchors>
+                              <x:Array Type="uc:CvElementDescriptor">
+                                <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="653, 54, 50, 13" ElementType="Text" Text="Sucrusal" />
+                              </x:Array>
+                            </uc:CvDescriptor.Anchors>
+                            <uc:CvDescriptor.Target>
+                              <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="653, 110, 32, 33" ElementType="Button" />
+                            </uc:CvDescriptor.Target>
+                          </uc:CvDescriptor>
+                        </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <p:CvClickWithDescriptor.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="26a71621-cc8d-40da-bdd0-a9e60c821f37">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </p:CvClickWithDescriptor.Target>
+                      </p:CvClickWithDescriptor>
+                    </Sequence>
+                  </ActivityAction>
+                </p:CVScope.Body>
+                <p:CVScope.DesignTimeCache>
+                  <uc:CVCache CvUiElements="{x:Null}" OcrTexts="{x:Null}" DataSent="False" />
+                </p:CVScope.DesignTimeCache>
+                <p:CVScope.DesignTimeCacheContainer>
+                  <uc:CvCacheContainer>
+                    <uc:CvCacheContainer.Caches>
+                      <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                        <uc:CVCache DataSent="False" DisplayName="Screen CV Click - 'Sucrusal' (Main)" Id="28357d99-ffe2-4fa9-9887-01e3ed6ca869" InformativeScreenshot="33589dfa386ad71a00b50662a5af1540" LogicalPosition="1920, 206" OcrText="Cliente Sucrusal A068428 GASOLINERA Y SERVICIOS DE LA CRUZ 0 Fecha Desde Fecha Hasta 01/03/2026 31/03/2026 Calcular Título Mostrar 50 reg Marca TM Sucursal Comprobante Remision Consignatario Fecha Producto Total Nulo Contiene... Contiene... Igual a... Igual a... Igual a... En... Contiene... Igual a... 0 - 0 de 0 registros 1" Position="1920, 206" ScreenshotGuid="f8eb0100-83fc-4fa1-a2da-c5f2bf8b3ff7" ServerVersion="24.10">
+                          <uc:CVCache.CvAnchorRelations>
+                            <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="8">
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="21">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>18</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="6">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>1</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="1">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>9</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="87">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>12</x:Int32>
+                                    <x:Int32>13</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="3">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>3</x:Int32>
+                                    <x:Int32>4</x:Int32>
+                                    <x:Int32>5</x:Int32>
+                                    <x:Int32>6</x:Int32>
+                                    <x:Int32>7</x:Int32>
+                                    <x:Int32>8</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="0">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>10</x:Int32>
+                                    <x:Int32>11</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                              <uc:AnchorRelationInfo IsTargetText="False" Target="14">
+                                <uc:AnchorRelationInfo.Anchors>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>2</x:Int32>
+                                  </x:Array>
+                                </uc:AnchorRelationInfo.Anchors>
+                              </uc:AnchorRelationInfo>
+                            </scg:List>
+                          </uc:CVCache.CvAnchorRelations>
+                          <uc:CVCache.CvTables>
+                            <x:Array Type="uc:CvTableInfo">
+                              <uc:CvTableInfo>
+                                <uc:CvTableInfo.Columns>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>30</x:Int32>
+                                    <x:Int32>232</x:Int32>
+                                    <x:Int32>437</x:Int32>
+                                    <x:Int32>643</x:Int32>
+                                    <x:Int32>851</x:Int32>
+                                    <x:Int32>1053</x:Int32>
+                                    <x:Int32>1257</x:Int32>
+                                    <x:Int32>1467</x:Int32>
+                                    <x:Int32>1669</x:Int32>
+                                    <x:Int32>1869</x:Int32>
+                                  </x:Array>
+                                </uc:CvTableInfo.Columns>
+                                <uc:CvTableInfo.Rows>
+                                  <x:Array Type="x:Int32">
+                                    <x:Int32>233</x:Int32>
+                                    <x:Int32>259</x:Int32>
+                                    <x:Int32>280</x:Int32>
+                                  </x:Array>
+                                </uc:CvTableInfo.Rows>
+                              </uc:CvTableInfo>
+                            </x:Array>
+                          </uc:CVCache.CvTables>
+                          <uc:CVCache.CvUiElements>
+                            <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="128">
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="28, 118, 280, 23" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="653, 70, 103, 24" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="753, 70, 25, 24" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="149, 70, 471, 24" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="281, 119, 29, 23" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="638, 146, 64, 27" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="773, 70, 471, 24" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="128, 70, 24, 24" />
+                              <uc:CvElementInfo Category="Icon" Description="search icon" Region="131, 73, 18, 18" />
+                              <uc:CvElementInfo Category="Icon" Description="search icon" Region="756, 73, 18, 18" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1438, 260, 26, 22" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="4, 3, 43, 37" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="260, 121, 17, 17" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="14, 10, 20, 22" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="28, 70, 102, 24" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="1707, 288, 18, 17" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="573, 122, 16, 17" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="852, 262, 19, 19" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="1853, 288, 19, 17" />
+                              <uc:CvElementInfo Category="Icon" Description="star icon" Region="1816, 10, 24, 24" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1806, 3, 45, 37" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="1778, 209, 44, 26" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="32, 262, 19, 18" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="442, 262, 19, 19" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1703, 282, 34, 27" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="653, 110, 32, 33" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1776, 281, 26, 29" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1829, 162, 32, 33" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="1860, 11, 20, 20" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1735, 281, 36, 29" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1807, 282, 35, 29" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1849, 3, 42, 37" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1820, 210, 27, 25" />
+                              <uc:CvElementInfo Category="Button" Description="Button" Region="1840, 282, 35, 29" />
+                              <uc:CvElementInfo Category="Icon" Description="Icon" Region="67, 192, 19, 18" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="30, 233, 202, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="30, 259, 202, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="232, 233, 205, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="232, 259, 205, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="437, 233, 206, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="437, 259, 206, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="643, 233, 208, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="643, 259, 208, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="851, 233, 202, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="851, 259, 202, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1053, 233, 204, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1053, 259, 204, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1257, 233, 210, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1257, 259, 210, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1467, 233, 202, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1467, 259, 202, 21" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1669, 233, 200, 26" />
+                              <uc:CvElementInfo Category="Cell" Description="Cell" Region="1669, 259, 200, 21" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1828, 162, 33, 33" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="653, 109, 32, 33" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1058, 262, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1468, 262, 17, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Button" Confidence="Runtime" Region="1846, 209, 29, 25" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="648, 263, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1673, 263, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1776, 281, 25, 29" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="MaximizeButton" Confidence="Runtime" Region="1849, 4, 41, 36" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1263, 262, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="237, 262, 18, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="443, 262, 17, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1850, 212, 22, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="ArrowButton" Confidence="Runtime" Region="68, 192, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Button" Confidence="Runtime" Region="67, 192, 20, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="MinimizeButton" Confidence="Runtime" Region="1807, 4, 44, 36" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Button" Confidence="Runtime" Region="1777, 209, 43, 25" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="444, 260, 203, 22" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="32, 262, 18, 18" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1743, 288, 14, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="852, 262, 18, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CheckBox" Confidence="Runtime" Region="1468, 263, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1703, 282, 34, 28" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CheckBox" Confidence="Runtime" Region="443, 263, 17, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1846, 209, 30, 25" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CheckBox" Confidence="Runtime" Region="1263, 263, 17, 16" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="MaximizeButton" Confidence="Runtime" Region="573, 122, 16, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1839, 282, 36, 29" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CheckBox" Confidence="Runtime" Region="1058, 263, 17, 16" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CloseButton" Confidence="Runtime" Region="1849, 4, 42, 36" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CloseButton" Confidence="Runtime" Region="1807, 4, 45, 37" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="CheckBox" Confidence="Runtime" Region="238, 263, 18, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1821, 287, 14, 17" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="Icon" Confidence="Runtime" Region="1738, 284, 26, 24" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="340, 118, 280, 24" />
+                              <uc:CvElementInfo Category="InputBox" Description="Inputbox" Region="1260, 260, 201, 23" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1669, 260, 205, 22" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1465, 260, 206, 23" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1807, 281, 35, 29" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="235, 260, 206, 22" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1736, 282, 36, 28" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="1057, 261, 205, 21" />
+                              <uc:CvElementInfo Description="{x:Null}" Category="InputBox" Confidence="Runtime" Region="647, 260, 204, 22" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="593, 118, 29, 24" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="647, 262, 19, 19" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1671, 261, 21, 20" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1467, 262, 19, 19" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1262, 262, 19, 19" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="236, 262, 20, 19" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1057, 262, 19, 19" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1735, 282, 34, 28" />
+                              <uc:CvElementInfo Category="ArrowButton" Description="ArrowButton" Region="1807, 282, 36, 29" />
+                            </scg:List>
+                          </uc:CVCache.CvUiElements>
+                          <uc:CVCache.OcrTexts>
+                            <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="50">
+                              <uc:OcrTextInfo Region="28, 54, 43, 13" Text="Cliente" />
+                              <uc:OcrTextInfo Region="653, 54, 50, 13" Text="Sucrusal" />
+                              <uc:OcrTextInfo Region="31, 77, 53, 12" Text="A068428" />
+                              <uc:OcrTextInfo Region="153, 77, 80, 12" Text="GASOLINERA" />
+                              <uc:OcrTextInfo Region="232, 77, 10, 12" Text="Y" />
+                              <uc:OcrTextInfo Region="242, 77, 64, 13" Text="SERVICIOS" />
+                              <uc:OcrTextInfo Region="307, 76, 19, 14" Text="DE" />
+                              <uc:OcrTextInfo Region="327, 77, 18, 13" Text="LA" />
+                              <uc:OcrTextInfo Region="345, 77, 35, 13" Text="CRUZ" />
+                              <uc:OcrTextInfo Region="656, 77, 10, 12" Text="0" />
+                              <uc:OcrTextInfo Region="28, 102, 36, 13" Text="Fecha" />
+                              <uc:OcrTextInfo Region="66, 102, 37, 13" Text="Desde" />
+                              <uc:OcrTextInfo Region="341, 102, 35, 13" Text="Fecha" />
+                              <uc:OcrTextInfo Region="378, 103, 34, 12" Text="Hasta" />
+                              <uc:OcrTextInfo Region="31, 124, 69, 15" Text="01/03/2026" />
+                              <uc:OcrTextInfo Region="344, 124, 69, 15" Text="31/03/2026" />
+                              <uc:OcrTextInfo Region="646, 152, 48, 13" Text="Calcular" />
+                              <uc:OcrTextInfo Region="28, 193, 35, 13" Text="Título" />
+                              <uc:OcrTextInfo Region="1728, 213, 48, 12" Text="Mostrar" />
+                              <uc:OcrTextInfo Region="1784, 215, 16, 12" Text="50" />
+                              <uc:OcrTextInfo Region="1851, 215, 21, 13" Text="reg" />
+                              <uc:OcrTextInfo Region="32, 242, 38, 12" Text="Marca" />
+                              <uc:OcrTextInfo Region="236, 242, 22, 13" Text="TM" />
+                              <uc:OcrTextInfo Region="442, 241, 50, 13" Text="Sucursal" />
+                              <uc:OcrTextInfo Region="762, 241, 84, 16" Text="Comprobante" />
+                              <uc:OcrTextInfo Region="996, 241, 54, 13" Text="Remision" />
+                              <uc:OcrTextInfo Region="1057, 241, 83, 16" Text="Consignatario" />
+                              <uc:OcrTextInfo Region="1263, 241, 35, 13" Text="Fecha" />
+                              <uc:OcrTextInfo Region="1468, 241, 54, 13" Text="Producto" />
+                              <uc:OcrTextInfo Region="1840, 241, 29, 13" Text="Total" />
+                              <uc:OcrTextInfo Region="53, 265, 29, 14" Text="Nulo" />
+                              <uc:OcrTextInfo Region="257, 265, 63, 13" Text="Contiene..." />
+                              <uc:OcrTextInfo Region="462, 265, 63, 13" Text="Contiene..." />
+                              <uc:OcrTextInfo Region="667, 265, 31, 16" Text="Igual" />
+                              <uc:OcrTextInfo Region="700, 268, 17, 10" Text="a..." />
+                              <uc:OcrTextInfo Region="873, 265, 30, 16" Text="Igual" />
+                              <uc:OcrTextInfo Region="905, 268, 17, 10" Text="a..." />
+                              <uc:OcrTextInfo Region="1077, 265, 31, 16" Text="Igual" />
+                              <uc:OcrTextInfo Region="1110, 268, 17, 10" Text="a..." />
+                              <uc:OcrTextInfo Region="1283, 266, 25, 12" Text="En..." />
+                              <uc:OcrTextInfo Region="1487, 265, 63, 13" Text="Contiene..." />
+                              <uc:OcrTextInfo Region="1693, 265, 30, 16" Text="Igual" />
+                              <uc:OcrTextInfo Region="1725, 268, 17, 10" Text="a..." />
+                              <uc:OcrTextInfo Region="29, 289, 9, 12" Text="0" />
+                              <uc:OcrTextInfo Region="39, 289, 8, 11" Text="-" />
+                              <uc:OcrTextInfo Region="47, 288, 11, 13" Text="0" />
+                              <uc:OcrTextInfo Region="58, 287, 17, 15" Text="de" />
+                              <uc:OcrTextInfo Region="76, 289, 10, 12" Text="0" />
+                              <uc:OcrTextInfo Region="87, 288, 52, 16" Text="registros" />
+                              <uc:OcrTextInfo Region="1785, 289, 7, 13" Text="1" />
+                            </scg:List>
+                          </uc:CVCache.OcrTexts>
+                        </uc:CVCache>
+                      </scg:List>
+                    </uc:CvCacheContainer.Caches>
+                  </uc:CvCacheContainer>
+                </p:CVScope.DesignTimeCacheContainer>
+                <p:CVScope.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                    <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseAccents="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="400,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="en" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" UseSeparateOcrProcess="True" />
+                  </ActivityFunc>
+                </p:CVScope.OCREngine>
+                <p:CVScope.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3e00a875-72ae-40a7-9dae-336c1f221763" InformativeScreenshot="2b348fd07e86c5f2bff9b231a4f9ff6f" Selector="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=093114087' tag='IFRAME' /&gt;&lt;webctrl id='divPrincipal' tag='DIV' /&gt;" WaitForReady="INTERACTIVE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </p:CVScope.Target>
+                <p:CVScope.UseLocalServer>
+                  <InArgument x:TypeArguments="x:Boolean" />
+                </p:CVScope.UseLocalServer>
+              </p:CVScope>
+              <uix:NForEachUiElement DisplayName="For Each UI Element 'FEBE 2,957,1956,209,680…'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='CurrentElement'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='CurrentLabel_1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="486,490" sap2010:WorkflowViewState.IdRef="NForEachUiElement_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="4c47be80-d134-4581-9f41-662b825b55e8" Version="V5">
+                <uix:NForEachUiElement.Body>
+                  <ActivityAction x:TypeArguments="x:Int32">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,253" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence sap:VirtualizedContainerService.HintSize="450,193" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Check" sap:VirtualizedContainerService.HintSize="416,110" sap2010:WorkflowViewState.IdRef="Check_1">
+                          <ui:Check.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7f49668b-36f4-4e02-9e76-6908c69fb151">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Check.Target>
+                        </ui:Check>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NForEachUiElement.Body>
+                <uix:NForEachUiElement.Filter>
+                  <uuam:FilterArgument LogicalOperator="And">
+                    <uuam:FilterArgument.Filters>
+                      <scg:List x:TypeArguments="uuam:FilterEntryArgument" Capacity="1">
+                        <uuam:FilterEntryArgument Criterion="Column1" Operator="Contains" Value="R" />
+                      </scg:List>
+                    </uuam:FilterArgument.Filters>
+                  </uuam:FilterArgument>
+                </uix:NForEachUiElement.Filter>
+                <uix:NForEachUiElement.Target>
+                  <uix:TargetAnchorable BrowserURL="https://facturacion.efectivale.com.mx/SummaWeb/webfrmPrincipal.aspx" DesignTimeRectangle="38, 496, 1845, 186" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='webfrmBasico.aspx?frm=EfefrmespConsFactura&amp;amp;pref=173729914' tag='IFRAME' /&gt;&lt;webctrl id='grdCuerpo' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="fb2f6976-8168-45de-9349-6f4c9145dd07" InformativeScreenshot="9f07f529495c26443943d6c8d390a9f5.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NForEachUiElement.Target>
+                <uix:NForEachUiElement.Variables>
+                  <Variable x:TypeArguments="ui:UiElement" Name="CurrentElement" />
+                  <Variable x:TypeArguments="x:String" Name="CurrentElement_Label" />
+                  <Variable x:TypeArguments="x:String" Name="CurrentLabel_1" />
+                </uix:NForEachUiElement.Variables>
+                <uix:NForEachUiElement.VariablesMetadata>
+                  <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column0" Capacity="4">
+                    <uuam:VariableMetadata Name="CurrentElement" Type="ui:UiElement" />
+                    <uuam:VariableMetadata Name="CurrentElement_Label" Type="x:String" />
+                  </scg:List>
+                  <scg:List x:TypeArguments="uuam:VariableMetadata" x:Key="Column1" Capacity="4">
+                    <uuam:VariableMetadata Name="CurrentLabel_1" Type="x:String" />
+                  </scg:List>
+                </uix:NForEachUiElement.VariablesMetadata>
+              </uix:NForEachUiElement>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" Arguments="--disable-features=PasswordGeneration,PasswordManagerHint --disable-autofill --disable-notifications" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAIAAABE/PnQAAAABGdBTUEAALGPC/xhBQAABdpJREFUSEu1lXtMU1ccx02WLXNLzHxkuKFGlACFMUEebhG4Aqs8e9sijxUotJSWyoiaII+BPERsyyigFAoMcEYB59SIOKOYbQhSaJE+L9ayochj5aUMFKEg0OVyL5e24qZL9s35o/3d7/l+zjn3nHvW6P9nrTEtGEir1ZaUlKakpB48GJ+Wll5VVa3T6UxN/6bVAWq1mkqNcnR09vbG+/r6+/kF+Pj4A4AnDmdfXCwwdf+jVgHw+YUODrv9/AJBkEQkkkGQhMf7ursDAQEECiUCj/c5dOiwaZ/XyxRw5MiRvXvdiUQy0nx9/d3cgKys40ql0sT5hjICHDuW4e4OgCAJaQDgSaVGa7VaQ0/v+Ez5vdHDNx4HXegm13WHXvwjufHx5a6nYy/mDG2YVgA3b95ydf0CWRMQJLm5eeTmnjS0XlU//eqseiO3c0ehzE6gcChVOQhVu0qVtsWKbXzZNr4s+krP479mlryLWK8VwJ49X2KLDgCeOTknsEfj03NA1f2t+TJHIeRagbQu4wa5lEN2AuVWvrxItDTjRZSBAs6c+cHDYx+S7uPjR6czsHTV0JRlkeKzEpVLOZyCpDuXQ45CeAYOQtVuIfxoTwXkumQwz5fmNA1g3VEAHr8/MBAkEskEAtHdHRgaGkbqU7PzlqfkDnAE3JyEKuvTik2ce7bFCt9zD4IudAfVdXuduW9RKDfjSe1LlAhpE7fzt0eTK4C+vj4nJ1dk6b288Hx+AcYPPK+xEyhcyiHncsiiQG4nUPJbtf0Turn5lVXW6/UzLxekg1Px1x/ZCLt3V2icy1S2xciuW4QBNTU1+/Z5gyCJQCB6eXmPjo4i3bpGXmwvkLuUQY5lKvN8acW9EcPQVZVfcGpv3i+7qnvN8jrl2ufoDHgFAl9vLwJI8vcPDAujYO7sXwesTsntS5S4YsVz3bxREqrFqdmX6mE4CFHNuXP0oEAS56KF8OHJ5kEUEFM/QvDZD4IkT0/vyspqzA3WdtsWK3eVqJAsrL4suHJVOXroJw1WqqmtpYRTv4kge3EaEm7DM4YBQDn0ecbPIZ6uHoBnW1sb5iZf0HzM6+yf0K2Wjmpdagu19j72t6S0LIIazWCxGZRQzs0HKACsVm7Jg4DE7/FOdgq5HHMTzmtSGvuWfq4OsM/r2JDWmtTQg1UOxifEMJixzDhqFK20qBAFpDb0bMkS7Sh4YJNQpZZLMXeFZLj3KXIyTaWdnDHPFm073rY+raVehW6K2VkdNYoWy4xjstjhEZF1dT+igMGJmXcS7+C4YguebAdXWtmuXVg+h6/qydQs+5Lm/aQ7lhyxFVdslimanUfff1u7OCT0ayaLzWSxSeQDcgW8U9GDFnwWMs9uw3E7rDjiDel3P85oDT0LnW7uv6V5Ih98Ju6duKwcybjxECiVrU2+szVbhON22PAkG9NbT9zuxdiJSck0OoPJYsey4gggeWFxwehb9GmWaHtOO47XYcOVWHM6LHLaN2eK1qW2rE1q/jCleX1ai3lW287cdhuuBPGYZYi8y1ZeWGenlBwUjAyfRmekpKQh9RXA+PScDVdsliGyhiPgFBxPYsvrQNpyBR64FUfy0bctAZUrN8Ts3ByNHhPDYCKAQJAkW94sRveBXr8Yd0mzPu3u5sxWy5Nia67Edglmy5Pg4GlJduaK4adZrQVN/Ybd0tMzIqjR2PDj4xOwRwaA5ff656Qu9fpDl6LODel33zva9EFy89rk5neTmj7JFHkIZIKWAd1Lo1OdfTwnlBKBpDNZbAJIHh5Gv5WvzsBoyw9N6n4ffSHpn5QOPOsZmx6fNr2z+vsH2Ox4Sngklg4Sgxobbxt6XgW8Xku7AhEEdfF43wWHhNHoMUg0I5YVQCBeq28w6vJ2AL3+aGIyJTySGk0PDgmjRtGQ6BgGMyQkLCwsXAVBph3eFqDX6y9dvkIJjwSJZCLpAJF0AATJtBhm/TXTgWN6awCisbExtVqt0XRPTqI31+v0HwFvrr8B6f5e8nwN8XsAAAAASUVORK5CYII=" InformativeScreenshot="db9cd99f785dcc7a8cfba3314c2a5c7f.jpg" Selector="&lt;html app='chrome.exe' title='Summa Advanced (Ver 3.88.57)' /&gt;" Url="https://facturacion.efectivale.com.mx/SummaWeb/Login.aspx" Version="V2">
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

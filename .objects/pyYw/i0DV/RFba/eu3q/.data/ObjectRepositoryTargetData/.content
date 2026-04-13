@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kL9HE_c2nEi9szQWctt7jA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="monext.xiga.com.mx/MenuFrame.aspx" DesignTimeRectangle="836, 303, 351, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='main-content-iframe' tag='IFRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='fromDate' tableRow='1' tag='INPUT' /&gt;" Guid="c62a4d63-dc5e-4e3a-991e-1a7d799644fd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='monext.xiga.com.mx/MenuFrame.aspx#' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a688d9b039f7e40500aedb8d942ae63d.jpg" xmlns="">0Sudvn4vy2EqucuHzoFbLoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

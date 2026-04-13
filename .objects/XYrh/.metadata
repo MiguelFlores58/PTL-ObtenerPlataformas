@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome LoginV5",
+  "Type": "App",
+  "Id": "XYrhCJnpOkGDJmikuMvuUA",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/XYrhCJnpOkGDJmikuMvuUA",
+  "Created": "2026-03-23T19:25:05.1580559Z",
+  "Updated": "2026-03-23T19:25:05.1580559Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Bienvenido a Edenred Secure",
+  "Type": "Screen",
+  "Id": "eeYE6qzvAkWJ3s4TYfPoKQ",
+  "Reference": "jpfYyaO_M0CCtBQDB7o2IA/eeYE6qzvAkWJ3s4TYfPoKQ",
+  "ParentRef": "jpfYyaO_M0CCtBQDB7o2IA/1Yymmm8MYky8hu0vRMaqGg",
+  "Created": "2026-03-30T21:58:21.5433593Z",
+  "Updated": "2026-03-30T21:58:21.5433593Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
