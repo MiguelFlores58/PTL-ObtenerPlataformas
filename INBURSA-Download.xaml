@@ -114,31 +114,31 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,6222" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1155,7043" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="590,6199" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="626,7020" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,6116" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,6937" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554,5922" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,6743" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="1" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Text="[in_UserName]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="1" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Text="[in_UserName]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/login" DesignTimeRectangle="970, 456, 342, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='writeUser' tag='INPUT' type='text' class='form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched newFormat' placeholder='Usuario' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1d612400-0328-428c-bc5c-73c306a17a78" InformativeScreenshot="4bded8d5380364b3cefbc9118d05e518.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -149,7 +149,7 @@
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="1" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Text="[in_Password]" Version="V5">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DelayBefore="1" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Text="[in_Password]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/login" DesignTimeRectangle="970, 534, 342, 38" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='writePwd' tag='INPUT' type='password' class='form-control btnPwd add-number newFormat ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required' placeholder='Contraseña' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9573f552-5422-4831-aa70-7ee97868af1f" InformativeScreenshot="9884e66fb03070233bc231871cb2c329.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -160,12 +160,12 @@
                   </uix:TargetAnchorable>
                 </uix:NTypeInto.Target>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="520,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="556,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/login" DesignTimeRectangle="970, 620, 389, 36" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='ingresar' tag='BUTTON' /&gt;" Guid="6bdf6aa9-9d70-4ab4-9517-33c8def30580" InformativeScreenshot="b82ec4057479dc820c5ba47aee86c4f0.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NCheckState DisplayName="Check App State 'Ayuda / Manuales Cerrar…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,819" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <uix:NCheckState DisplayName="Check App State 'Ayuda / Manuales Cerrar…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,819" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,384" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <sap:WorkflowViewStateService.ViewState>
@@ -215,9 +215,9 @@
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/inicio" DesignTimeRectangle="8, 95, 1905, 80" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='NAV' /&gt;" Guid="29434f38-ca2f-44d2-b993-3656bf191374" InformativeScreenshot="2ad8b62dbc0d26f4d51183c569853985.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State 'Consulta de Movimientos…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,2347" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <uix:NCheckState DisplayName="Check App State 'Consulta de Movimientos…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,2541" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,1912" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,2106" sap2010:WorkflowViewState.IdRef="Sequence_9">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="ui:UiElement" Name="strResultado" />
                       <Variable x:TypeArguments="x:String" Name="strResultadoOk" />
@@ -255,7 +255,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:CommentOut>
-                    <uix:NSelectItem DelayAfter="1" DelayBefore="1" DisplayName="Select Item 'Número de afiliación'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Todas" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                    <uix:NSelectItem DelayAfter="2" DelayBefore="1" DisplayName="Select Item 'Número de afiliación'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Todas" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="4">
                           <x:String>Afiliación</x:String>
@@ -274,7 +274,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NSelectItem DelayAfter="1" DelayBefore="1" DisplayName="Select Item 'Tipo de Reporte'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Ventas" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                    <uix:NSelectItem DelayAfter="2" DelayBefore="1" DisplayName="Select Item 'Tipo de Reporte'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Ventas" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="3">
                           <x:String>Reporte</x:String>
@@ -292,7 +292,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NSelectItem DelayAfter="1" DelayBefore="1" DisplayName="Select Item 'Tipo de Transacción'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Todo" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                    <uix:NSelectItem DelayAfter="2" DelayBefore="1" DisplayName="Select Item 'Tipo de Transacción'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="Todo" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="4">
                           <x:String>Transacción</x:String>
@@ -311,7 +311,7 @@
                         </uix:TargetAnchorable>
                       </uix:NSelectItem.Target>
                     </uix:NSelectItem>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Tipo de operación'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DelayBefore="1" DisplayName="Click 'Tipo de operación'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="759, 421, 137, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='valForm' tag='INPUT' type='' class='fiel-txt-ico form-control select-u textoPequenio border border-danger' placeholder='Operaciones' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4e0edab4-01a8-4e3c-b473-cf32b8d9f4c0" InformativeScreenshot="60f69a08da7c43245acba68f52384999.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -322,7 +322,7 @@
                         </uix:TargetAnchorable>
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <uix:NCheck Action="Check" DelayAfter="1" DelayBefore="1" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                    <uix:NCheck Action="Check" DelayAfter="2" DelayBefore="1" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NCheck.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="767, 569, 13, 13" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='0' tag='INPUT' type='checkbox' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7257f380-cf35-46d9-b457-bd614b844b53" InformativeScreenshot="8c14f8ac589e97335849344a00d3f341.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
@@ -333,7 +333,7 @@
                         </uix:TargetAnchorable>
                       </uix:NCheck.Target>
                     </uix:NCheck>
-                    <uix:NInjectJsScript DisplayName="Inject Js Script 'Periodo'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InputParameter="01/03/2026" OutUiElement="[strResultado]" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" ScriptCode="function(element, inputDate) { element.removeAttribute('readonly'); element.removeAttribute('disabled'); element.value = inputDate; element.dispatchEvent(new Event('input', { bubbles: true })); element.dispatchEvent(new Event('change', { bubbles: true })); return 'ok'; }" Version="V5">
+                    <uix:NInjectJsScript DelayAfter="2" DisplayName="Inject Js Script 'Periodo'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InputParameter="01/03/2026" OutUiElement="[strResultado]" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" ScriptCode="function(element, inputDate) { element.removeAttribute('readonly'); element.removeAttribute('disabled'); element.value = inputDate; element.dispatchEvent(new Event('input', { bubbles: true })); element.dispatchEvent(new Event('change', { bubbles: true })); return 'ok'; }" Version="V5">
                       <uix:NInjectJsScript.ScriptOutput>
                         <OutArgument x:TypeArguments="x:String">[strResultadoOk]</OutArgument>
                       </uix:NInjectJsScript.ScriptOutput>
@@ -347,7 +347,12 @@
                         </uix:TargetAnchorable>
                       </uix:NInjectJsScript.Target>
                     </uix:NInjectJsScript>
-                    <uix:NInjectJsScript DisplayName="Inject Js Script 'Periodo'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" InputParameter="31/03/2026" OutUiElement="[strResultado]" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" ScriptCode="function(element, inputDate) { element.removeAttribute('readonly'); element.removeAttribute('disabled'); element.value = inputDate; element.dispatchEvent(new Event('input', { bubbles: true })); element.dispatchEvent(new Event('change', { bubbles: true })); return 'ok'; }" Version="V5">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'al'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="1118, 549, 80, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div' idx='12' parentid='liquidado-acomulado' parentname='reporteDetallado.enviarReporte' tag='DIV' /&gt;" Guid="a0f7687c-9e23-4239-8a83-1dba682beccf" InformativeScreenshot="5ab85ed22cb79e8d9d10120912c081ef.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NInjectJsScript DelayAfter="2" DisplayName="Inject Js Script 'al'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" InputParameter="31/03/2026" OutUiElement="[strResultado]" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" ScriptCode="function(element, inputDate) { element.removeAttribute('readonly'); element.removeAttribute('disabled'); element.value = inputDate; element.dispatchEvent(new Event('input', { bubbles: true })); element.dispatchEvent(new Event('change', { bubbles: true })); return 'ok'; }" Version="V5">
                       <uix:NInjectJsScript.ScriptOutput>
                         <OutArgument x:TypeArguments="x:String">[strResultadoOk]</OutArgument>
                       </uix:NInjectJsScript.ScriptOutput>
@@ -361,7 +366,7 @@
                         </uix:TargetAnchorable>
                       </uix:NInjectJsScript.Target>
                     </uix:NInjectJsScript>
-                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_4" />
                     <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Exportar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="1622, 505, 25, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;i' idx='2' parentid='liquidado-acomulado' tag='I' /&gt;" Guid="de6ced66-9861-4891-8d4d-65b9650cfe23" InformativeScreenshot="879eadb098c17fb1d394450f57a37186.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
@@ -383,7 +388,7 @@
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="308, 175, 1620, 394" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='liquidado-acomulado' tag='DIV' /&gt;" Guid="67bcad71-a3d9-4f17-974e-5aefbe04eb54" InformativeScreenshot="df8df22f90196ce68a02c56a97eef76f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State 'La generación del extra…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,680" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <uix:NCheckState DisplayName="Check App State 'La generación del extra…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,680" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
@@ -411,9 +416,10 @@
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="562, 507, 798, 178" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;modal-notificacion&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='extracto' tag='DIV' /&gt;" Guid="f63a0bef-10ea-4595-a0a9-e3bf2e387621" InformativeScreenshot="0630d97cf0f24d52cdc85ab51e933891.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <uix:NCheckState DisplayName="Check App State 'Notificaciones de desca…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="520,1216" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="556,123" sap2010:WorkflowViewState.IdRef="Delay_5" />
+              <uix:NCheckState DelayBefore="2" DisplayName="Check App State 'Notificaciones de desca…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,1720" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NCheckState.IfExists>
-                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="518,781" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="554,1285" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
                     </Sequence.Variables>
@@ -422,29 +428,47 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="484,537" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
-                      <ui:GetLastDownloadedFile.Body>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="520,123" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                    <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="520,795" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="10" RetryInterval="00:00:05">
+                      <ui:RetryScope.ActivityBody>
                         <ActivityAction>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="518,588" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Descarga" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
-                              <uix:NClick.Target>
-                                <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/notificaciones" DesignTimeRectangle="1314, 380, 26, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='I' /&gt;" Guid="13c66e5f-3921-4357-80ee-a5efbca99407" InformativeScreenshot="614bd532752ed81370e95141face3c3a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
-                              </uix:NClick.Target>
-                            </uix:NClick>
+                            <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="484,528" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                              <ui:GetLastDownloadedFile.Body>
+                                <ActivityAction>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="[UiPath.UIAutomationNext.Enums.CursorMotionType.Smooth]" DelayBefore="0.5" DisplayName="Click Descarga" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/notificaciones" DesignTimeRectangle="1314, 380, 26, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='I' /&gt;" Guid="13c66e5f-3921-4357-80ee-a5efbca99407" InformativeScreenshot="614bd532752ed81370e95141face3c3a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:GetLastDownloadedFile.Body>
+                            </ui:GetLastDownloadedFile>
                           </Sequence>
                         </ActivityAction>
-                      </ui:GetLastDownloadedFile.Body>
-                    </ui:GetLastDownloadedFile>
-                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;INBURSA-&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="484,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Path="[strArchivoDescargado.FullName]" />
+                      </ui:RetryScope.ActivityBody>
+                      <ui:RetryScope.Condition>
+                        <ActivityFunc x:TypeArguments="x:Boolean" />
+                      </ui:RetryScope.Condition>
+                    </ui:RetryScope>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="520,123" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;INBURSA-&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="520,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strArchivoDescargado.FullName]" />
                   </Sequence>
                 </uix:NCheckState.IfExists>
                 <uix:NCheckState.IfNotExists>
-                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="518,90" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="554,90" sap2010:WorkflowViewState.IdRef="Sequence_16">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -456,7 +480,7 @@
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/notificaciones" DesignTimeRectangle="348, 271, 1540, 492" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" Guid="39292a3b-352b-4a10-a3c3-48fce4009dd7" InformativeScreenshot="b52805c1ea77851854af4c96f2ce116f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="520,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="556,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
