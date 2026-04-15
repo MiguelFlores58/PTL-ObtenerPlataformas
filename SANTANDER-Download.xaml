@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
     <x:Property Name="in_Password" Type="InArgument(x:String)" />
@@ -122,9 +122,16 @@
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,10726" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,10919" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="boolExisteFecha" />
     </Sequence.Variables>
@@ -133,7 +140,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="592,10589" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="592,10782" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strFechaInicial" />
         <Variable x:TypeArguments="x:String" Name="strFechaFinal" />
@@ -147,13 +154,13 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LoginV5(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,10497" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LoginV5(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,10690" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,10303" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,10496" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -613,7 +620,10 @@
                   <uix:TargetAnchorable BrowserURL="globalgetnet.com/home" DesignTimeRectangle="8, 95, 1920, 50" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='HEADER' /&gt;" Guid="25a3d2e0-5c95-4499-bbd7-4f05f5c81acb" InformativeScreenshot="4e2d29e9b5afd08d4e064772253e6dd3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <Sequence DisplayName="Obtener reporte" sap:VirtualizedContainerService.HintSize="522,6641" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Obtener reporte" sap:VirtualizedContainerService.HintSize="522,6834" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
+                </Sequence.Variables>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -864,7 +874,7 @@
                   </uix:NClick.Target>
                 </uix:NClick>
                 <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_7" />
-                <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" sap:VirtualizedContainerService.HintSize="488,722" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[strArchivoDescargado]" sap:VirtualizedContainerService.HintSize="488,731" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                   <ui:GetLastDownloadedFile.Body>
                     <ActivityAction>
                       <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_11">
@@ -887,6 +897,7 @@
                     </ActivityAction>
                   </ui:GetLastDownloadedFile.Body>
                 </ui:GetLastDownloadedFile>
+                <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;C:\PetroLaguna\Reportes\&quot; + &quot;Getnet&quot; + in_NombreEstacion.ToString + &quot;  &quot; + Now.ToString(&quot;ddMMyy&quot;) + strArchivoDescargado.Extension]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="488,184" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[strArchivoDescargado.FullName]" />
               </Sequence>
             </Sequence>
           </ActivityAction>
