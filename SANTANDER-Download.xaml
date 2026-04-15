@@ -124,7 +124,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,10338" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,10726" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="boolExisteFecha" />
     </Sequence.Variables>
@@ -133,7 +133,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="592,10201" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="592,10589" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strFechaInicial" />
         <Variable x:TypeArguments="x:String" Name="strFechaFinal" />
@@ -147,13 +147,13 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LoginV5(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,10109" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome LoginV5(1)(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,10497" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,9915" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,10303" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -613,7 +613,7 @@
                   <uix:TargetAnchorable BrowserURL="globalgetnet.com/home" DesignTimeRectangle="8, 95, 1920, 50" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='HEADER' /&gt;" Guid="25a3d2e0-5c95-4499-bbd7-4f05f5c81acb" InformativeScreenshot="4e2d29e9b5afd08d4e064772253e6dd3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <Sequence DisplayName="Obtener reporte" sap:VirtualizedContainerService.HintSize="522,6253" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Obtener reporte" sap:VirtualizedContainerService.HintSize="522,6641" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -730,15 +730,15 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NCheckState>
-                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="488,2129" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="488,2323" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                   <ui:InterruptibleWhile.Body>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,1998" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="486,2192" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:IfElseIfV2 Condition="[vFechaInicial.Year &lt; vMesPantalla.Year OrElse (vFechaInicial.Year = vMesPantalla.Year AndAlso vFechaInicial.Month &lt; vMesPantalla.Month)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="452,801" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+                      <ui:IfElseIfV2 Condition="[vFechaInicial.Year &lt; vMesPantalla.Year OrElse (vFechaInicial.Year = vMesPantalla.Year AndAlso vFechaInicial.Month &lt; vMesPantalla.Month)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="452,995" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
                         <ui:IfElseIfV2.Else>
                           <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <sap:WorkflowViewStateService.ViewState>
@@ -757,12 +757,17 @@
                           <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True" />
                         </ui:IfElseIfV2.ElseIfs>
                         <ui:IfElseIfV2.Then>
-                          <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="450,369" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="450,563" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V5">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="globalgetnet.com/statement/transactions" DesignTimeRectangle="1157, 456, 20, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='arrow_form_left' tag='DIV' /&gt;" Guid="cc387573-8105-4142-8c58-480023a441d7" InformativeScreenshot="2daf2f8a4efce09c584f9222cee3fe5c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
                             <uix:NGetText DisplayName="Get Text mes en pantalla" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" TextString="[strMesExtraido]" Version="V5">
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="globalgetnet.com/statement/transactions" DesignTimeRectangle="1216, 454, 118, 27" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='ABBR' /&gt;" Guid="a71a538b-fc4a-413f-b980-b394761a1f75" InformativeScreenshot="62cfd0054469fe3cc73f7dd44e767cea.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
@@ -839,7 +844,7 @@
                     </Sequence>
                   </ui:InterruptibleWhile.Body>
                   <ui:InterruptibleWhile.Condition>
-                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolExisteFecha = false" />
+                    <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="boolExisteFecha = false" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
                   </ui:InterruptibleWhile.Condition>
                 </ui:InterruptibleWhile>
                 <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click Fecha Inicial" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V5">
@@ -859,18 +864,23 @@
                   </uix:NClick.Target>
                 </uix:NClick>
                 <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_7" />
-                <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" sap:VirtualizedContainerService.HintSize="488,528" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" sap:VirtualizedContainerService.HintSize="488,722" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                   <ui:GetLastDownloadedFile.Body>
                     <ActivityAction>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,439" sap2010:WorkflowViewState.IdRef="Sequence_11">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'Descargar Archivo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V5">
+                        <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'Descargar Archivo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V5">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="globalgetnet.com/statement/transactions" DesignTimeRectangle="1318, 388, 187, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Descargar Archivo' parentid='flex-page-component' tag='BUTTON' /&gt;" Guid="f90146f4-17b1-4b4f-8807-790b6ad01b17" InformativeScreenshot="1fb43fa8e996249a2b08054a1fdda531.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'Descargar en .xlsx'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15a10faf-5fe4-4ff8-afcf-3bfaa38cd6f1" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="globalgetnet.com/statement/transactions" DesignTimeRectangle="1382, 479, 101, 21" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Descargar en .xlsx' parentid='action-tools' tag='DIV' /&gt;" Guid="00821a43-25c2-4d32-b512-3472c33b92cc" InformativeScreenshot="394a133b3362dcf4cd04a1e56d34d65c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Merchant Portal' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                           </uix:NClick.Target>
                         </uix:NClick>
                       </Sequence>
