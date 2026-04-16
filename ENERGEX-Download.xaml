@@ -113,7 +113,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1150,3850" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1073,3727" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="si:FileInfo" Name="strArchivoDescargado" />
     </Sequence.Variables>
@@ -122,19 +122,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="624,3827" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="624,3704" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Energex" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="590,3744" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Always]" DisplayName="Chrome Energex" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="590,3621" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,3550" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="588,3427" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,7 +192,7 @@
                   <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/index.php" DesignTimeRectangle="509, 320, 49, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='INPUT' /&gt;" Guid="a4f90ac6-ac96-4312-bc16-5ebff057915c" InformativeScreenshot="695fbbcfda13d6358c6c0dc9ae48714c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Log in' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <uix:NCheckState DisplayName="Check App State" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="554,2496" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
+              <uix:NCheckState DisplayName="Check App State" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="554,2487" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d67a1edf-2aa5-4baa-8a4c-f0cf70dbeff8" Version="V5">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="552,2061" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
@@ -287,7 +287,6 @@
                   <uix:TargetAnchorable BrowserURL="recargasenergex.net/estaciones/monitores.php" DesignTimeRectangle="9, 182, 981, 77" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='IMG' /&gt;" Guid="df060a9c-2d83-4df9-b650-e08173809e27" InformativeScreenshot="7f3c3c71f0dd315d38db41434906f88d.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Energex - Monitor de Transacciones' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="554,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>

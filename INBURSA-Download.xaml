@@ -114,25 +114,25 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1155,7043" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1073,6920" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="626,7020" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="626,6897" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,6937" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="592,6814" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,6743" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="590,6620" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,7 +142,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/login" DesignTimeRectangle="970, 456, 342, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='writeUser' tag='INPUT' type='text' class='form-control ng-pristine ng-empty ng-invalid ng-invalid-required ng-touched newFormat' placeholder='Usuario' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1d612400-0328-428c-bc5c-73c306a17a78" InformativeScreenshot="4bded8d5380364b3cefbc9118d05e518.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1141, 424, 47, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='etiqueta mt-3' aaname='                                                                                              ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario' /&gt;" Guid="32941af8-cc73-44c2-98d6-673feb7ba5f0" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -153,7 +153,7 @@
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/login" DesignTimeRectangle="970, 534, 342, 38" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='writePwd' tag='INPUT' type='password' class='form-control btnPwd add-number newFormat ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required' placeholder='Contraseña' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9573f552-5422-4831-aa70-7ee97868af1f" InformativeScreenshot="9884e66fb03070233bc231871cb2c329.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="1130, 502, 70, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='etiqueta' tag='LABEL' type='' aaname='                                                                                              ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña' /&gt;" Guid="d402d085-cbe0-430a-b709-a0e8e405c37f" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -239,7 +239,7 @@
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="822, 447, 286, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='fechaInicio' tag='INPUT' /&gt;" Guid="3142f87d-118d-470f-a040-3205b5fb4d58" InformativeScreenshot="3c1edb7bbc2f55b1708f4757b50b43f3.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target DesignTimeRectangle="734, 452, 47, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='liquidado-acomulado' parentname='reporteDetallado.enviarReporte' tag='A' type='' class='label-section ct-1 etiqueta' aaname='Periodo' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Periodo' /&gt;" Guid="4e8414a0-27f6-4541-b26d-91d1505d7ebe" SearchSteps="FuzzySelector" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -267,7 +267,7 @@
                       <uix:NSelectItem.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="759, 359, 137, 38" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' class='fiel-txt-ico form-control select-u textoPequenio bordeGris ng-pristine ng-empty ng-invalid ng-invalid-required border border-danger ng-touched' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4139fb7c-77ac-4a37-a340-163ebb16a0b2" InformativeScreenshot="502400c08d5f69c70c1ca943c2eebb58.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="601, 362, 128, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='liquidado-acomulado' tag='SPAN' type='' class='' aaname='Número de afiliación:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Número de afiliación:' /&gt;" Guid="2178e6cc-d93a-4a00-a85b-01420d1778b2" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -285,7 +285,7 @@
                       <uix:NSelectItem.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="1133, 359, 137, 38" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='reporte' tag='SELECT' type='' class='fiel-txt-ico form-control select-u textoPequenio bordeGris ng-touched ng-not-empty ng-dirty ng-valid-parse ng-valid ng-valid-required' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="571cdbb4-a61d-4809-8c67-14382a26b8ac" InformativeScreenshot="f51947b0f97d4e56674b3a7ea4b204da.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="1003, 362, 100, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='liquidado-acomulado' tag='SPAN' class='' aaname='                     Tipo de Reporte:                   ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Tipo de Reporte:' /&gt;" Guid="065c8ec9-aa93-4ead-bbc9-1c5055e0f467" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -304,7 +304,7 @@
                       <uix:NSelectItem.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="1507, 359, 137, 38" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='transaccion' tag='SELECT' type='' class='fiel-txt-ico form-control select-u textoPequenio bordeGris ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required border border-danger' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0a0eaafc-ea46-4c64-b55f-66d81230d766" InformativeScreenshot="a48e3b5ff7efc1a4568d95ce44b684e4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="1351, 362, 126, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='ng-scope' parentid='liquidado-acomulado' tag='SPAN' type='' aaname='                     Tipo de Transacción:                    ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Tipo de Transacción:' /&gt;" Guid="37d60026-d923-4a30-bb0c-758694f224e5" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -315,7 +315,7 @@
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="759, 421, 137, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='valForm' tag='INPUT' type='' class='fiel-txt-ico form-control select-u textoPequenio border border-danger' placeholder='Operaciones' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4e0edab4-01a8-4e3c-b473-cf32b8d9f4c0" InformativeScreenshot="60f69a08da7c43245acba68f52384999.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="616, 424, 113, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Tipo de operación:' parentid='liquidado-acomulado' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Tipo de operación:' /&gt;" Guid="b2e0663e-b58f-4ab8-840f-775c65237490" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -326,7 +326,7 @@
                       <uix:NCheck.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="767, 569, 13, 13" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='0' tag='INPUT' type='checkbox' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7257f380-cf35-46d9-b457-bd614b844b53" InformativeScreenshot="8c14f8ac589e97335849344a00d3f341.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="760, 565, 134, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='label0' tag='LABEL' type='' class='labelBackgroud ng-binding ng-scope' aaname='                               Todas                       ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Todas' /&gt;" Guid="5c138f16-9119-48b8-8e55-a69e06cc466c" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -340,7 +340,7 @@
                       <uix:NInjectJsScript.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="822, 447, 286, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='fechaInicio' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='fechaInicio' tag='INPUT' type='text' class='date registros form-control select-inline fiel-txt-ico textoPequenio bordeGris ng-pristine ng-isolate-scope hasDatepicker ng-empty ng-invalid ng-invalid-required ng-touched' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="034086e3-62ac-430c-82fb-07e290f578a5" InformativeScreenshot="836482ab13e9eb00bcfc51c156e18bdc.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="734, 452, 47, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='liquidado-acomulado' parentname='reporteDetallado.enviarReporte' tag='A' type='' class='label-section ct-1 etiqueta' aaname='Periodo' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Periodo' /&gt;" Guid="b7c0c634-1abd-403b-b20e-a8c2fbde56b7" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -359,7 +359,7 @@
                       <uix:NInjectJsScript.Target>
                         <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/reporte_detallado" DesignTimeRectangle="1208, 447, 301, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='fechaFin' tag='INPUT' /&gt;" Guid="ae521721-034c-428d-8813-033ebc594243" InformativeScreenshot="7a76dd7493bc6db93ac53799b345b039.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="1153, 452, 10, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='al ' parentid='liquidado-acomulado' parentname='reporteDetallado.enviarReporte' tag='A' type='' class='label-section ct-1 etiqueta' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:parentname='fuzzy' fuzzylevel:parentname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='al' /&gt;" Guid="d9aa23d9-9fb3-4942-9c88-14cc215c0622" SearchSteps="FuzzySelector" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -417,7 +417,7 @@
                 </uix:NCheckState.Target>
               </uix:NCheckState>
               <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="556,123" sap2010:WorkflowViewState.IdRef="Delay_5" />
-              <uix:NCheckState DelayBefore="2" DisplayName="Check App State 'Notificaciones de desca…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,1720" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
+              <uix:NCheckState DelayBefore="2" DisplayName="Check App State 'Notificaciones de desca…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="556,1711" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="c2fa6e13-59cf-419a-8f68-e022c4e0e230" Version="V5">
                 <uix:NCheckState.IfExists>
                   <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="554,1285" sap2010:WorkflowViewState.IdRef="Sequence_14">
                     <Sequence.Variables>
@@ -480,7 +480,6 @@
                   <uix:TargetAnchorable BrowserURL="puntoelectronico.inbursa.com/sites/PuntoElectronico/notificaciones" DesignTimeRectangle="348, 271, 1540, 492" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" Guid="39292a3b-352b-4a10-a3c3-48fce4009dd7" InformativeScreenshot="b52805c1ea77851854af4c96f2ce116f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Inbursa | Punto Electrónico' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NCheckState.Target>
               </uix:NCheckState>
-              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="556,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
