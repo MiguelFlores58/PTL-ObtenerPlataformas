@@ -115,7 +115,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre Chrome normalmente (sin UiPath).&#xA;&#xA;Ve a Configuración &gt; Relleno automático y contraseñas &gt; Administrador de contraseñas.&#xA;&#xA;Haz clic en Configuración (en el menú de la izquierda).&#xA;&#xA;Desactiva la opción: &quot;Ofrecer guardar contraseñas&quot;." AttachMode="ByInstance" DisplayName="Chrome Multicobros Banorte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1197" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="False" ScopeGuid="6c85c2d2-fc86-47ec-b151-f1d540d7764e" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre Chrome normalmente (sin UiPath).&#xA;&#xA;Ve a Configuración &gt; Relleno automático y contraseñas &gt; Administrador de contraseñas.&#xA;&#xA;Haz clic en Configuración (en el menú de la izquierda).&#xA;&#xA;Desactiva la opción: &quot;Ofrecer guardar contraseñas&quot;." AttachMode="ByInstance" DisplayName="Chrome Multicobros Banorte" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1197" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6c85c2d2-fc86-47ec-b151-f1d540d7764e" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
@@ -167,7 +167,7 @@
           </ActivityAction>
         </uix:NApplicationCard.Body>
         <uix:NApplicationCard.DialogHandling>
-          <uix:DialogHandling ConfirmDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]" DismissConfirms="True" DismissPrompts="True" PromptDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]" />
+          <uix:DialogHandling ConfirmDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]" PromptDialogResponse="[UiPath.UIAutomationNext.Enums.NBrowserDialogResponse.Cancel]" />
         </uix:NApplicationCard.DialogHandling>
         <uix:NApplicationCard.OCREngine>
           <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
