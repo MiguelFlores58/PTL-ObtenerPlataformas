@@ -103,35 +103,35 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1076,1160" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1076,2618" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="486,1137" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="522,2595" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1054" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,2512" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V2" WindowResize="Maximize">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,860" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,2318" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_UserName]" Version="V5">
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_UserName]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="973, 424, 202, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='text' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="635e01c3-aaa8-4568-8c0a-44ffcabef88d" InformativeScreenshot="9a1f6d134562d0e4da950a2a2baa2ba1.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="900, 426, 57, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname=' Usuario: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario:' /&gt;" Guid="d84badd8-9d03-4369-8517-8ca45c2e1083" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -139,17 +139,20 @@
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.VerifyOptions>
                   <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
                     <uix:VerifyExecutionTypeIntoOptions.Timeout>
                       <InArgument x:TypeArguments="x:Double" />
                     </uix:VerifyExecutionTypeIntoOptions.Timeout>
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_Password]" Version="V5">
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_Password]" Version="V5">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="973, 449, 202, 19" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='password' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="dfa77569-d445-4d68-8634-505c2822175a" InformativeScreenshot="c5702d75025f140e99701ec609ddc474.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                     <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                         <uix:Target DesignTimeRectangle="875, 451, 82, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname=' Contraseña: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña:' /&gt;" Guid="45e0acb0-4a50-40f1-871e-9a2d0d21986b" SearchSteps="FuzzySelector" />
                       </scg:List>
                     </uix:TargetAnchorable.Anchors>
@@ -157,18 +160,81 @@
                 </uix:NTypeInto.Target>
                 <uix:NTypeInto.VerifyOptions>
                   <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
                     <uix:VerifyExecutionTypeIntoOptions.Timeout>
                       <InArgument x:TypeArguments="x:Double" />
                     </uix:VerifyExecutionTypeIntoOptions.Timeout>
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="1040, 475, 69, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='tablaBorde1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" Guid="6e4d542c-43c6-4106-925b-89a60a76d75a" InformativeScreenshot="0e1090cc7aa8eab1579636432ab7426a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'Reportes de Punto de Ve…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com" DesignTimeRectangle="534, 258, 190, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='tablaBordeClaro' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" Guid="f6451dce-32e0-408b-bc3d-61994f3a1d5d" InformativeScreenshot="a15db2f39fe88ed0d10485ef76eb032a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'Reporte de Colecta a De…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com" DesignTimeRectangle="534, 292, 190, 12" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='tablaBordeClaro' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;" Guid="4a72e895-7337-4cae-9e60-c1977698f091" InformativeScreenshot="ac9180e1c5c1272f9e680e1989dca9d4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Reporte de Colecta a De…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,1070" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,635" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NInjectJsScript ScriptOutput="{x:Null}" DelayAfter="2" DisplayName="Inject Js Script 'Fecha Inicial'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InputParameter="01/03/2026" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" ScriptCode="function(element, input) {&#xD;&#xA;    element.removeAttribute('readonly');&#xD;&#xA;    element.value = input;&#xD;&#xA;    element.dispatchEvent(new Event('input', { bubbles: true }));&#xD;&#xA;    element.dispatchEvent(new Event('change', { bubbles: true }));&#xD;&#xA;    element.dispatchEvent(new Event('blur', { bubbles: true }));&#xD;&#xA;    return 'ok';&#xD;&#xA;}" Version="V5">
+                      <uix:NInjectJsScript.Target>
+                        <uix:TargetAnchorable BrowserURL="vale.inbursa.com/aReportes.do" DesignTimeRectangle="873, 350, 162, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a6df6b38-9596-491c-9f56-a2152314a604" InformativeScreenshot="35f25d14d1cf8637fd8c15198da54067.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="757, 350, 102, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='fechaInicial' type='' tag='TD' class='celdaOscura' aaname=' Fecha Inicial: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha Inicial:' /&gt;" Guid="c5a7009c-eff8-4512-a4e9-f17e7ab8c269" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NInjectJsScript.Target>
+                    </uix:NInjectJsScript>
+                    <uix:NInjectJsScript ScriptOutput="{x:Null}" DelayAfter="2" DisplayName="Inject Js Script 'Fecha Final'" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" InputParameter="31/04/2026" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" ScriptCode="function(element, input) {&#xD;&#xA;    element.removeAttribute('readonly');&#xD;&#xA;    element.value = input;&#xD;&#xA;    element.dispatchEvent(new Event('input', { bubbles: true }));&#xD;&#xA;    element.dispatchEvent(new Event('change', { bubbles: true }));&#xD;&#xA;    element.dispatchEvent(new Event('blur', { bubbles: true }));&#xD;&#xA;    return 'ok';&#xD;&#xA;}" Version="V5">
+                      <uix:NInjectJsScript.Target>
+                        <uix:TargetAnchorable BrowserURL="vale.inbursa.com/aReportes.do" DesignTimeRectangle="1187, 350, 162, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='{actionForm.fechaFinal}' type='text' tag='INPUT' class='entrada_texto' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="aa5849a8-7f0d-4cdc-8a88-d2d6bc81ce35" InformativeScreenshot="3c45b7c0144889f99875b79f066f1697.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <uix:Target DesignTimeRectangle="1081, 350, 92, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='fechaFinal' type='' tag='TD' class='celdaOscura' aaname=' Fecha Final: ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fecha Final:' /&gt;" Guid="dd95a16e-2be8-4f12-8e43-2d2afde934f3" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NInjectJsScript.Target>
+                    </uix:NInjectJsScript>
+                    <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click Ver Reporte" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="vale.inbursa.com/aReportes.do" DesignTimeRectangle="1314, 374, 82, 17" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tableRow='6' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="89733f96-2262-4d88-8b87-9de589723972" InformativeScreenshot="4d2e2d8c0d3cd68a875ff4e911211a84.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com/aReportes.do" DesignTimeRectangle="750, 266, 648, 132" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' idx='2' tableCol='1' tableRow='1' tag='TABLE' /&gt;" Guid="a92c63f1-20f4-4f1b-8b91-2f9ea790a5bf" InformativeScreenshot="d4e23202341f3b9cbb10d591ac5ca52e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=ff7b8b66b97c02850069e292346da0588faaef0c00a7b3c79102a1a1511b1e1d97' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
