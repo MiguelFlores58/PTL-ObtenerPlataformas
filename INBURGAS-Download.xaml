@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Santander_GetNet_Download" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_NombreEstacion" Type="InArgument(x:String)" />
     <x:Property Name="in_Password" Type="InArgument(x:String)" />
@@ -35,6 +35,17 @@
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -64,14 +75,121 @@
       <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
       <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1156,616.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Santander_GetNet_Download" sap:VirtualizedContainerService.HintSize="1076,1160" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,114" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="SANTANDER" />
+    <Sequence sap:VirtualizedContainerService.HintSize="486,1137" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Vale Inbursa Web" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1054" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,860" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Usuario'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_UserName]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="973, 424, 202, 19" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='text' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="635e01c3-aaa8-4568-8c0a-44ffcabef88d" InformativeScreenshot="9a1f6d134562d0e4da950a2a2baa2ba1.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="900, 426, 57, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname=' Usuario: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Usuario:' /&gt;" Guid="d84badd8-9d03-4369-8517-8ca45c2e1083" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="{x:Null}" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Contraseña'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Text="[in_Password]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="973, 449, 202, 19" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='password' tag='INPUT' class='entrada_texto' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="dfa77569-d445-4d68-8634-505c2822175a" InformativeScreenshot="c5702d75025f140e99701ec609ddc474.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="875, 451, 82, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='tablaBorde1' tag='TABLE' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;&lt;webctrl type='' tag='STRONG' class='' aaname=' Contraseña: ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contraseña:' /&gt;" Guid="45e0acb0-4a50-40f1-871e-9a2d0d21986b" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="{x:Null}" ClickType="Single" DisplayName="Click 'INPUT'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="363eae8b-9aef-454d-9e9b-3701c444d595" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="vale.inbursa.com/login/login.jsp" DesignTimeRectangle="1040, 475, 69, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='tablaBorde1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='11' tag='INPUT' /&gt;" Guid="6e4d542c-43c6-4106-925b-89a60a76d75a" InformativeScreenshot="0e1090cc7aa8eab1579636432ab7426a.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="1912, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ee1fde4ad9a00774a46a1f6d4c523e1a.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='#TS00000000076=71a726d137f5052b0069e283a06988e2ae7d5e8640a032d5d4e3be62fa03e433c2' title='Vale Inbursa Web' /&gt;" Url="https://vale.inbursa.com/login/login.jsp" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
   </Sequence>
 </Activity>
